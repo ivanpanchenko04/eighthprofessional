@@ -101,7 +101,7 @@ span.woocs_price_info_icon{
     display: inline-block;
     width: 15px;
     height: 15px;
-    background-image: url(../img/woocs_price_info_icon.png);
+    background-image: url(/wp-content/plugins/woocommerce-currency-switcher/img/woocs_price_info_icon.png);
 }
 
 .woocs_price_info{

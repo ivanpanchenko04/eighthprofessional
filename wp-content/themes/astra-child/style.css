@@ -5,14 +5,14 @@ Template: astra
 
 @font-face {
     font-family: 'Annabelle';
-    src: url('fonts/Annabelle\ Cyr.ttf') format('truetype');
+    src: url('/wp-content/themes/astra-child/fonts/Annabelle%5C%20Cyr.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Aston';
-    src: url('fonts/Aston\ Script.ttf') format('truetype');
+    src: url('/wp-content/themes/astra-child/fonts/Aston%5C%20Script.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
