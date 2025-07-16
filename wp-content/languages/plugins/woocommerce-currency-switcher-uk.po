@@ -1,0 +1,2097 @@
+# Translation of Plugins - FOX &#8211; Currency Switcher Professional for WooCommerce - Development (trunk) in Ukrainian
+# This file is distributed under the same license as the Plugins - FOX &#8211; Currency Switcher Professional for WooCommerce - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-04-12 06:44:12+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: uk_UA\n"
+"Project-Id-Version: Plugins - FOX &#8211; Currency Switcher Professional for WooCommerce - Development (trunk)\n"
+
+#: classes/woocs.php:6372
+msgid "FOX - Currency Switcher Professional for WooCommerce?"
+msgstr "FOX - Currency Switcher Professional for WooCommerce?"
+
+#: classes/woocs.php:6564
+msgid "Incompatible plugin:"
+msgstr "Несумісні плагіни:"
+
+#: views/plugin_options_2.php:1696
+msgid "If you have ideas about scenarios of the statistic please share and discuss them on "
+msgstr "Якщо у вас є ідеї щодо сценаріїв розвитку статистики, поділіться ними та обговоріть їх на "
+
+#: views/plugin_options_2.php:2049
+msgid " If you want to use more currencies"
+msgstr " Якщо ви хочете використовувати більше валют"
+
+#: views/plugin_options_2.php:1531
+msgid "Here you can create set of countries profiles to apply it then in the products by your business logic."
+msgstr "Тут ви можете створити набір профілів країн, щоб потім застосувати їх у товарах відповідно до вашої бізнес-логіки."
+
+#: classes/woocs.php:6512
+msgid "%1$s for %2$s item"
+msgid_plural "%1$s for %2$s items"
+msgstr[0] "%1$s за %2$s позицію"
+msgstr[1] "%1$s за %2$s позиції"
+msgstr[2] "%1$s за %2$s позицій"
+
+#: views/woocs_order_metabox.php:61
+msgid "Update rate"
+msgstr "Швидкість оновлення"
+
+#: views/woocs_order_metabox.php:51
+msgid "Open/Close"
+msgstr "Відкрити/Закрити"
+
+#: views/plugin_options_2.php:1776
+msgid "Chat GPT"
+msgstr "Чат GPT"
+
+#: views/plugin_options_2.php:1777
+msgid "You can try to ask chat GPT about how to use this plugin. Use former name of the plugin WOOCS."
+msgstr "Ви можете спробувати запитати в чаті GPT про те, як використовувати цей плагін. Використовуйте попередню назву плагіна WOOCS."
+
+#: classes/woocs.php:6196
+msgid "Security problem"
+msgstr "Проблема безпеки"
+
+#: views/plugin_options_2.php:485
+msgid "special: every 2 hours"
+msgstr "спеціальний: кожні 2 години"
+
+#: views/plugin_options_2.php:1053
+msgid "Selected currency in Schema.org"
+msgstr "Вибрана валюта в Schema.org"
+
+#: views/plugin_options_2.php:1063
+msgid "By default, product price fields in schema.org are displayed in the base currency. Activate this option so that the prices are displayed in the selected currency (for example scanning using GET params in the link)"
+msgstr "Початково, поля ціни товару в schema.org відображаються в базовій валюті. Активуйте цю опцію, щоб ціни відображалися у вибраній валюті (наприклад, сканування за допомогою GET-параметрів у посиланні)"
+
+#: views/plugin_options_2.php:1046
+msgid "By default, the plugin switches to the base currency for bots that crawl the site. This setting can disable this behavior. If you need let bots see prices in shop basic currency do NOT activate this option. If to enable this option, will work for bots such options as welcome currency and geo ip options, but this need in specific situations"
+msgstr "Початковий плагін перемикається на базову валюту для ботів, які сканують сайт. Це налаштування може вимкнути таку поведінку. Якщо вам потрібно, щоб боти бачили ціни в основній валюті магазину, НЕ активуйте цю опцію. Якщо увімкнути цю опцію, то для ботів будуть працювати такі параметри, як вітальна валюта і опції гео ip, але це потрібно в конкретних ситуаціях"
+
+#: classes/widgets/widget-woocs-selector.php:9
+msgid "Currency Switcher for WooCommerce by realmag777"
+msgstr "Перемикач валют для WooCommerce від realmag777"
+
+#: classes/widgets/widget-woocs-selector.php:7
+#: classes/widgets/widget-woocs-selector.php:36
+msgid "FOX Currency Switcher"
+msgstr "FOX Перемикач валют"
+
+#: views/plugin_options_2.php:389
+msgid "Currency aggregators. Note: If you know aggregator which not is represented in FOX write request on support please with suggestion to add it!"
+msgstr "Агрегатори валют. Примітка: Якщо ви знаєте агрегатор, який не представлений у WOOCS, напишіть запит на підтримку, будь ласка, з пропозицією додати його!"
+
+#: views/plugin_options_2.php:752
+msgid "Show FOX options button on top admin bar for quick access. Very handy for active work. Visible for site administrators only!"
+msgstr "Показати кнопку параметрів WOOCS на верхній панелі адміністратора для швидкого доступу. Дуже зручний для активної роботи. Доступно лише для адміністраторів сайту!"
+
+#: views/plugin_options_2.php:785
+msgid "Disabling or Enabling FOX on the described pages only. Use comma and pages slugs. Example: blog,account"
+msgstr "Вимкнення або ввімкнення WOOCS лише на описаних сторінках. Використовуйте комах і кулі сторінок. Приклад: блог, акаунт"
+
+#: views/plugin_options_2.php:2038
+msgid "If FOX settings panel looks incorrect or you have JavaScript errors (after update) - firstly"
+msgstr "Якщо панель налаштувань WOOCS виглядає неправильно або у вас є помилки JavaScript (після оновлення) - по-перше"
+
+#. Plugin Name of the plugin
+#: index.php
+msgid "FOX - Currency Switcher Professional for WooCommerce"
+msgstr "FOX - Currency Switcher Professional for WooCommerce"
+
+#: views/plugin_options_2.php:24
+msgid "FOX - Currency Switcher Professional for WooCommerce %s"
+msgstr "FOX - Currency Switcher Professional for WooCommerce %s"
+
+#: classes/woocs.php:1625
+msgid "Installing"
+msgstr "Встановлення"
+
+#: classes/woocs.php:1624 views/plugin_options_2.php:171
+msgid "Currency Wizard"
+msgstr "Майстер валюти"
+
+#: views/plugin_options_2.php:293
+msgid "Install your own set of selected currencies in one click! Also you can install from here only one selected currency. Remember: if you not found currency you need here - you can always add it by hands using Prepend/Append Currency button! If you do not like preselected currency symbols you can always add your own in tab Options."
+msgstr "Встановіть свій власний набір вибраних валют в один клік! Також ви можете встановити звідси лише одну обрану валюту. Пам'ятайте: якщо ви не знайшли потрібну вам валюту тут - ви завжди можете додати її вручну за допомогою кнопки Додати валюту! Якщо вам не подобаються попередньо вибрані символи валют, ви завжди можете додати свої власні у вкладці Параметри."
+
+#: views/plugin_options_2.php:314
+msgid "Install selected currencies"
+msgstr "Встановити вибрані валюти"
+
+#: views/plugin_options_2.php:325
+msgid "Install your own set of selected currencies in one click. Disabled in free version as has no sense because of 2 currencies limitation."
+msgstr "Встановіть власний набір вибраних валют в один клік. Вимкнено у безкоштовній версії, оскільки не має сенсу через обмеження на 2 валюти."
+
+#: views/plugin_options_2.php:1579
+msgid "Empty profile."
+msgstr "Порожній профіль."
+
+#: views/plugin_options_2.php:1727
+msgid "Support"
+msgstr "Підтримка"
+
+#: views/plugin_options_2.php:1451 views/plugin_options_2.php:1508
+msgid "Clear all"
+msgstr "Очистити все"
+
+#: views/plugin_options_2.php:2173
+msgid "+ to your interest in the rate, example values: 0.15, 20%"
+msgstr "+ до вашого інтересу до ставки, приклади значень: 0,15, 20%"
+
+#: views/plugin_options_2.php:169
+msgid "Add custom currency symbols"
+msgstr "Додайте власні символи валюти"
+
+#: views/plugin_options_2.php:516
+msgid "Add your custom currencies symbols in your shop. Example: $USD,AAA,AUD$,DDD,X - separated by commas"
+msgstr "Додайте власні символи валют у свій магазин. Приклад: $ USD, AAA, AUD $, DDD, X - розділені комами"
+
+#: views/plugin_options_2.php:642
+msgid "After cron done its job - new currency rates will be sent on the site admin email. ATTENTION: if you not got emails - it is mean that PHP function mail() doesnt work on your server or sending emails by this function is locked."
+msgstr "Після того, як cron зробив свою роботу - нові курси валют будуть надіслані на електронну адресу адміністратора сайту. УВАГА: якщо у вас немає електронних листів - це означає, що функція PHP mail () не працює на вашому сервері або надсилання електронних листів за допомогою цієї функції заблоковано."
+
+#: views/plugin_options_2.php:269
+msgid "Append Currency"
+msgstr "Додати валюту"
+
+#: views/plugin_options_2.php:1740
+msgid "Check please already prepared answers"
+msgstr "Перевірте, будь ласка, вже підготовлені відповіді"
+
+#: views/plugin_options_2.php:2127
+msgid "Code"
+msgstr "код"
+
+#: views/plugin_options_2.php:2131
+msgid "Currency symbols"
+msgstr "Символи валюти"
+
+#: views/plugin_options_2.php:506
+msgid "Custom currency symbols"
+msgstr "Спеціальні символи валют"
+
+#: views/plugin_options_2.php:832
+msgid "Customer will pay using selected currency (Yes) or using default currency (No)."
+msgstr "Клієнт сплачує з обраною валютою (Так) або з використанням валюти за замовчуванням (Ні)."
+
+#: views/plugin_options_2.php:2107 views/plugin_options_2.php:2108
+msgid "Drag and Drop"
+msgstr "Перетягування"
+
+#: views/plugin_options_2.php:1110
+msgid "Enable / Disable"
+msgstr "Увімкнути / Вимкнути"
+
+#: views/plugin_options_2.php:1126
+msgid "Enable / Disable the side currency switcher on your site"
+msgstr "Увімкніть / вимкніть бічний перемикач валют на вашому сайті"
+
+#: views/plugin_options_2.php:1852
+msgid "Find and use free flags to your taste according to your business preferences"
+msgstr "Знайдіть і використовуйте безкоштовні прапори на свій смак відповідно до своїх бізнес-уподобань"
+
+#: views/plugin_options_2.php:1764
+msgid "Found incompatibility? We can help!"
+msgstr "Знайдено несумісність? Ми можемо допомогти!"
+
+#: views/plugin_options_2.php:883
+msgid "Forces the customers to pay on checkout page by the rules defined in [GeoIP rules] tab. ATTENTION: this feature has logical sense if you enabled [Enable fixed pricing] and also set fixed prices rules to the products in different currencies!"
+msgstr "Змушує клієнтів платити на сторінці оплати за правилами, визначеними на вкладці [Правила GeoIP]. УВАГА: ця функція має логічний сенс, якщо ви ввімкнули [Увімкнути фіксовану ціну], а також встановили правила фіксованих цін на товари в різних валютах!"
+
+#: views/plugin_options_2.php:1029
+msgid "Hide or show payments systems on checkout page depending of the current currency"
+msgstr "Сховати або показати платіжні системи на сторінці оплати залежно від поточної валюти"
+
+#: views/plugin_options_2.php:660
+msgid "Hide switcher on the checkout page, if it is necessary."
+msgstr "Приховати перемикач на сторінці оформлення замовлення, якщо це необхідно."
+
+#: views/plugin_options_2.php:1887
+msgid "How to insert currency switcher into site menu?"
+msgstr "Як вставити перемикач валют в меню сайту?"
+
+#: views/plugin_options_2.php:1728
+msgid "If you have questions about plugin functionality or found bug write us please"
+msgstr "Якщо у вас є запитання щодо функціональності плагіна або виявлена ​​помилка, напишіть нам, будь ласка"
+
+#: views/plugin_options_2.php:429
+msgid "In some servers there are troubles with sessions, and after currency selecting it reset to welcome currency or geo ip currency. In such cases use transient storage. If it is possible on your hosting use Memcached or Redis!"
+msgstr "На деяких серверах виникають проблеми з сеансами, і після вибору валюти його скидають, щоб прийняти валюту або географічну валюту ip. У таких випадках використовують тимчасове сховище. Якщо це можливо на вашому хостингу, використовуйте Memcached або Redis!"
+
+#: views/plugin_options_2.php:371
+msgid "In which currency to show prices for first visit of your customer on your site. Do not do it by private currency to avoid logic mess!"
+msgstr "У якій валюті відображати ціни за перший візит вашого клієнта на ваш сайт. Не робіть це в приватній валюті, щоб уникнути логічного безладу!"
+
+#: views/plugin_options_2.php:1763
+msgid "Labs"
+msgstr "Лабораторії"
+
+#: views/plugin_options_2.php:225
+msgid "Move"
+msgstr "Рухатися"
+
+#: views/plugin_options_2.php:360 views/plugin_options_2.php:378
+#: views/plugin_options_2.php:396 views/plugin_options_2.php:418
+#: views/plugin_options_2.php:436 views/plugin_options_2.php:454
+#: views/plugin_options_2.php:472 views/plugin_options_2.php:505
+#: views/plugin_options_2.php:523 views/plugin_options_2.php:541
+#: views/plugin_options_2.php:559 views/plugin_options_2.php:577
+#: views/plugin_options_2.php:595 views/plugin_options_2.php:613
+#: views/plugin_options_2.php:631 views/plugin_options_2.php:649
+#: views/plugin_options_2.php:669 views/plugin_options_2.php:687
+#: views/plugin_options_2.php:705 views/plugin_options_2.php:723
+#: views/plugin_options_2.php:741 views/plugin_options_2.php:759
+#: views/plugin_options_2.php:802 views/plugin_options_2.php:810
+#: views/plugin_options_2.php:839 views/plugin_options_2.php:872
+#: views/plugin_options_2.php:898 views/plugin_options_2.php:916
+#: views/plugin_options_2.php:934 views/plugin_options_2.php:954
+#: views/plugin_options_2.php:989 views/plugin_options_2.php:1018
+#: views/plugin_options_2.php:1035 views/plugin_options_2.php:1052
+#: views/plugin_options_2.php:1069 views/plugin_options_2.php:1109
+#: views/plugin_options_2.php:1133 views/plugin_options_2.php:1168
+#: views/plugin_options_2.php:1197 views/plugin_options_2.php:1217
+#: views/plugin_options_2.php:1238 views/plugin_options_2.php:1259
+#: views/plugin_options_2.php:1280 views/plugin_options_2.php:1301
+#: views/plugin_options_2.php:1332 views/plugin_options_2.php:1350
+#: views/plugin_options_2.php:1384
+msgid "Option"
+msgstr "варіант"
+
+#: views/plugin_options_2.php:1652
+msgid "Orders (completed)"
+msgstr "Замовлення (виконані)"
+
+#: views/plugin_options_2.php:167
+msgid "Prepend Currency"
+msgstr "Додайте валюту"
+
+#: views/plugin_options_2.php:2175
+msgid "Press the button if you want to update currency rate!"
+msgstr "Натисніть кнопку, якщо ви хочете оновити курс валюти!"
+
+#: views/plugin_options_2.php:1796
+msgid "Quick Introduction"
+msgstr "Швидкий вступ"
+
+#: views/plugin_options_2.php:231 views/plugin_options_2.php:2167
+msgid "Rate+%"
+msgstr "Ставка +%"
+
+#: views/plugin_options_2.php:552
+msgid "Recounts prices without cents everywhere like in JPY and TWD which by its nature have not cents. Use comma. Example: UAH,RUB. Test it for checkout after setup!"
+msgstr "Перераховує ціни без центів скрізь, як у JPY та TWD, які за своєю природою не мають центів. Використовуйте кому. Приклад: грн., Руб. Перевірте його на замовлення після налаштування!"
+
+#: views/plugin_options_2.php:2013
+msgid "Save changes"
+msgstr "зберегти зміни"
+
+#: views/plugin_options_2.php:1450 views/plugin_options_2.php:1507
+msgid "Select all"
+msgstr "Вибрати всі"
+
+#: views/plugin_options_2.php:1414
+msgid "Should the payment systems be hidden for selected currencies or vice versa shown!"
+msgstr "Якщо платіжні системи будуть приховані для вибраних валют або показано навпаки!"
+
+#: views/plugin_options_2.php:570
+msgid "Show / Hide flags on the front drop-down"
+msgstr "Показати / приховати прапори на випадаючому списку"
+
+#: views/plugin_options_2.php:1325
+msgid "Show / Hide on mobile device (highest priority)"
+msgstr "Показати / сховати на мобільному пристрої (найвищий пріоритет)"
+
+#: views/plugin_options_2.php:670
+msgid "Show approximate amount"
+msgstr "Показати приблизну суму"
+
+#: views/plugin_options_2.php:680
+msgid "Show approximate amount on the checkout page and the cart page with currency of user defined by IP in the GeoIp rules tab. Works only with the currencies rates data and NOT with: fixed prices rules, geo rules."
+msgstr "Покажіть приблизну суму на сторінці оформлення замовлення та сторінці кошика з валютою користувача, визначеною IP-адресою, на вкладці \"Правила GeoIp\". Працює лише з даними курсів валют, а НЕ з: правилами фіксованих цін, правилами гео."
+
+#: views/plugin_options_2.php:698
+msgid "Show approximate price on the shop page and the product single page with currency of user defined by IP in the GeoIp rules tab. Works only with currencies rates data and NOT with: fixed prices rules, geo rules."
+msgstr "Покажіть приблизну ціну на сторінці магазину та на одній сторінці товару з валютою користувача, визначеною IP-адресою, на вкладці правил GeoIp. Працює лише з даними курсів валют, а НЕ з: правилами фіксованих цін, правилами гео."
+
+#: views/plugin_options_2.php:596
+msgid "Show currency symbols"
+msgstr "Показати символи валют"
+
+#: views/plugin_options_2.php:606
+msgid "Show or hide money symbols on the site front drop-down"
+msgstr "Показуйте або приховуйте символи грошей у випадаючому списку веб-сайту"
+
+#: views/plugin_options_2.php:407
+msgid "Some aggregators are required an API key."
+msgstr "Деякі агрегатори потребують ключа API."
+
+#: views/plugin_options_2.php:1882
+msgid "Some questions"
+msgstr "Кілька питань"
+
+#: views/plugin_options_2.php:363 views/plugin_options_2.php:381
+#: views/plugin_options_2.php:399 views/plugin_options_2.php:421
+#: views/plugin_options_2.php:439 views/plugin_options_2.php:457
+#: views/plugin_options_2.php:475 views/plugin_options_2.php:508
+#: views/plugin_options_2.php:526 views/plugin_options_2.php:544
+#: views/plugin_options_2.php:562 views/plugin_options_2.php:580
+#: views/plugin_options_2.php:598 views/plugin_options_2.php:616
+#: views/plugin_options_2.php:634 views/plugin_options_2.php:652
+#: views/plugin_options_2.php:672 views/plugin_options_2.php:690
+#: views/plugin_options_2.php:708 views/plugin_options_2.php:726
+#: views/plugin_options_2.php:744 views/plugin_options_2.php:762
+#: views/plugin_options_2.php:803 views/plugin_options_2.php:813
+#: views/plugin_options_2.php:842 views/plugin_options_2.php:875
+#: views/plugin_options_2.php:901 views/plugin_options_2.php:919
+#: views/plugin_options_2.php:937 views/plugin_options_2.php:957
+#: views/plugin_options_2.php:992 views/plugin_options_2.php:1021
+#: views/plugin_options_2.php:1038 views/plugin_options_2.php:1055
+#: views/plugin_options_2.php:1072 views/plugin_options_2.php:1112
+#: views/plugin_options_2.php:1136 views/plugin_options_2.php:1171
+#: views/plugin_options_2.php:1200 views/plugin_options_2.php:1220
+#: views/plugin_options_2.php:1241 views/plugin_options_2.php:1262
+#: views/plugin_options_2.php:1283 views/plugin_options_2.php:1304
+#: views/plugin_options_2.php:1335 views/plugin_options_2.php:1353
+#: views/plugin_options_2.php:1385
+msgid "Status"
+msgstr "статус"
+
+#: views/plugin_options_2.php:1161
+msgid "Style of the switcher on the site front (px)"
+msgstr "Стиль комутатора на передній частині сайту (px)"
+
+#: views/plugin_options_2.php:1824
+msgid "Translations"
+msgstr "Переклади"
+
+#: views/plugin_options_2.php:236 views/plugin_options_2.php:2228
+msgid "Visible"
+msgstr "видимий"
+
+#: views/plugin_options_2.php:1478
+msgid "WooCommerce GeoIP functionality doesn't work on your site"
+msgstr "Функціонал WooCommerce GeoIP не працює на вашому сайті"
+
+#: views/plugin_options_2.php:1478
+msgid "read this please"
+msgstr "прочитайте це будь ласка"
+
+#: views/plugin_options_2.php:2171
+msgid "Exchange rate"
+msgstr "Обмінний курс"
+
+#: views/plugin_options_2.php:1752
+msgid "FOX has power bunch of functionality"
+msgstr "FOX має потужну функціональність"
+
+#: views/plugin_options_2.php:1866
+msgid "Watch video tutorials about FOX features to use its functionality in full force"
+msgstr "Перегляньте відеоуроки про функції FOX, щоб використовувати його функціонал на повну силу"
+
+#: views/fixed/product_coupon_restriction_data.php:47
+msgid "FOX - fixed Minimum and Maximum spend"
+msgstr "FOX - фіксовані мінімальні та максимальні витрати"
+
+#: classes/woocs.php:962
+msgid "Base currency of the site is: %s"
+msgstr "Базова валюта сайту: %s"
+
+#: classes/woocs.php:1622
+msgid "Enter by hands or use this helper"
+msgstr "Введіть вручну або скористайтеся цим помічником"
+
+#: views/fixed/product_coupon_restriction_data.php:47
+msgid "Here you can set FIXED amount for the coupon for any the currency you want. In the case of empty amount field - will work recounting by rate!"
+msgstr "Тут ви можете встановити фіксовану суму купона для будь-якої валюти, яку ви хочете. У разі порожнього поля суми - спрацює перерахунок за курсом!"
+
+#: views/fixed/product_price_data.php:116
+msgid "Here you can set FIXED price for the product for any the currency you want. In the case of empty amount field - will work recounting by rate!"
+msgstr "Тут ви можете встановити фіксовану ціну на товар для будь-якої валюти, яку ви хочете. У разі порожнього поля суми - спрацює перерахунок за курсом!"
+
+#: classes/woocs.php:1621
+msgid "Select flag for"
+msgstr "Виберіть прапор для"
+
+#: views/plugin_options_2.php:234 views/plugin_options_2.php:2200
+#: views/plugin_options_2.php:2202
+msgid "Separators"
+msgstr "Роздільники"
+
+#: classes/woocs.php:1620
+msgid "Set title!"
+msgstr "Встановити заголовок!"
+
+#: views/plugin_options.php:1299
+msgid "Save"
+msgstr "Зберегти"
+
+#: classes/smart-designer.php:85
+msgid "Background color"
+msgstr "Колір фону"
+
+#: classes/smart-designer.php:76
+msgid "Border radius"
+msgstr "Радіус кордону"
+
+#: classes/smart-designer.php:64
+msgid "Created!"
+msgstr "Створено!"
+
+#: classes/smart-designer.php:65
+msgid "Creating ..."
+msgstr "Створення ..."
+
+#: classes/smart-designer.php:93
+msgid "Deleted!"
+msgstr "Видалено!"
+
+#: classes/smart-designer.php:92
+msgid "Deleting ..."
+msgstr "Видалення ..."
+
+#: classes/smart-designer.php:84
+msgid "Description font"
+msgstr "Шрифт опису"
+
+#: classes/smart-designer.php:70
+msgid "Description font size"
+msgstr "Розмір шрифту опису"
+
+#: classes/smart-designer.php:95 views/plugin_options.php:1240
+#: views/plugin_options_2.php:1949
+msgid "edit"
+msgstr "редагувати"
+
+#: classes/smart-designer.php:80
+msgid "Flag height"
+msgstr "Висота прапора"
+
+#: classes/smart-designer.php:81
+msgid "Flag vertical position"
+msgstr "Вертикальне положення прапора"
+
+#: classes/smart-designer.php:59
+msgid "Loaded!"
+msgstr "Завантажено!"
+
+#: classes/smart-designer.php:58
+msgid "Loading ..."
+msgstr "Завантаження ..."
+
+#: classes/smart-designer.php:86
+msgid "Pointer color"
+msgstr "Колір вказівника"
+
+#: classes/smart-designer.php:66
+msgid "Select currency"
+msgstr "Виберіть валюту"
+
+#: classes/smart-designer.php:82
+msgid "Show description"
+msgstr "Показати опис"
+
+#: classes/smart-designer.php:78
+msgid "Show flag"
+msgstr "Показати прапор"
+
+#: classes/smart-designer.php:60
+msgid "Something wrong!"
+msgstr "Щось не так!"
+
+#: classes/smart-designer.php:74
+msgid "Title color"
+msgstr "Колір заголовка"
+
+#: classes/smart-designer.php:73
+msgid "Title font size"
+msgstr "Розмір шрифту заголовка"
+
+#: classes/smart-designer.php:72
+msgid "Title value"
+msgstr "Значення заголовка"
+
+#: classes/smart-designer.php:96
+msgid "Use special keywords and their combination: __CODE__, __SIGN__, __DESCR__. Also you can use usual static text. Example: __CODE__ - __SIGN__"
+msgstr "Використовуйте спеціальні ключові слова та їх комбінації: __CODE__, __SIGN__, __DESCR__. Також ви можете використовувати звичайний статичний текст. Приклад: __CODE__ - __SIGN__"
+
+#: classes/smart-designer.php:68
+msgid "Width 100%"
+msgstr "Ширина 100%"
+
+#: classes/smart-designer.php:63
+msgid "Are you sure?"
+msgstr "Ти впевнений?"
+
+#: views/plugin_options.php:1217 views/plugin_options_2.php:1923
+msgid "Create"
+msgstr "Створювати"
+
+#: classes/smart-designer.php:94 views/plugin_options.php:1240
+#: views/plugin_options_2.php:1953
+msgid "delete"
+msgstr "видаляти"
+
+#: classes/smart-designer.php:83
+msgid "Description color"
+msgstr "Колір опису"
+
+#: views/plugin_options.php:271 views/plugin_options_2.php:139
+msgid "Designer"
+msgstr "Дизайнер"
+
+#: views/plugin_options.php:1301 views/plugin_options_2.php:2015
+msgid "Exit without save"
+msgstr "Вихід без збереження"
+
+#: views/plugin_options.php:1260 views/plugin_options_2.php:1977
+msgid "General"
+msgstr "загальний"
+
+#: views/plugin_options.php:1214 views/plugin_options_2.php:1920
+msgid "In this section you can create your own view of currency drop-down switcher"
+msgstr "У цьому розділі ви можете створити власний вигляд випадаючого перемикача валют"
+
+#: classes/smart-designer.php:90
+msgid "Max open height"
+msgstr "Максимальна відкрита висота"
+
+#: views/plugin_options.php:1280 views/plugin_options_2.php:1994
+msgid "Missing options? Describe your proposal please on the support forum."
+msgstr "Відсутні параметри? Опишіть свою пропозицію, будь ласка, на форумі підтримки."
+
+#: classes/smart-designer.php:87
+msgid "Options divider color"
+msgstr "Варіанти роздільника кольору"
+
+#: classes/smart-designer.php:88
+msgid "Options divider size"
+msgstr "Варіанти розміру дільника"
+
+#: views/plugin_options.php:1302 views/plugin_options_2.php:2016
+msgid "Reset to default"
+msgstr "Скинути за замовчуванням"
+
+#: views/plugin_options.php:1300 views/plugin_options_2.php:2014
+msgid "Save and exit"
+msgstr "Зберегти та вийти"
+
+#: classes/smart-designer.php:62
+msgid "Saved!"
+msgstr "Врятований!"
+
+#: classes/smart-designer.php:61
+msgid "saving ..."
+msgstr "економія ..."
+
+#: classes/smart-designer.php:69
+msgid "Scale"
+msgstr "шкала"
+
+#: classes/smart-designer.php:71
+msgid "Show title"
+msgstr "Показати назву"
+
+#: views/plugin_options.php:1212 views/plugin_options_2.php:1914
+msgid "Smart Designer"
+msgstr "Розумний дизайнер"
+
+#: classes/smart-designer.php:91
+msgid "Title Bold"
+msgstr "Заголовок Жирний"
+
+#: classes/smart-designer.php:77
+msgid "Border color"
+msgstr "Колір межі"
+
+#: classes/smart-designer.php:75
+msgid "Title font"
+msgstr "Шрифт назви"
+
+#: classes/smart-designer.php:89
+msgid "Border width"
+msgstr "Ширина межі"
+
+#: classes/woocs.php:6397
+msgid "No thanks"
+msgstr "Ні, дякую"
+
+#: classes/woocs.php:6396
+msgid "Give Feedback"
+msgstr "Відгуки"
+
+#: classes/woocs.php:6389
+msgid "I already did"
+msgstr "я вже зробив"
+
+#: classes/woocs.php:6367
+msgid "Later"
+msgstr "Пізніше"
+
+#: classes/woocs.php:6388
+msgid "Nope, maybe later"
+msgstr "Ні, можливо, пізніше"
+
+#: classes/woocs.php:6375
+msgid "Not really..."
+msgstr "Не зовсім..."
+
+#: classes/woocs.php:6387
+msgid "Okay, you deserve it"
+msgstr "Гаразд, ти цього заслужив"
+
+#: classes/woocs.php:6375
+msgid "Yes, I love it"
+msgstr "Так, я люблю це"
+
+#: classes/woocs.php:6370
+msgid "Hi! Are you enjoying using "
+msgstr "Привіт! Вам подобається користуватися "
+
+#: views/plugin_options.php:1417
+msgid "In the free version of the plugin %s you can operate with 2 ANY currencies only%s! If you want to use more currencies %s you can make upgrade to the premium version%s of the plugin"
+msgstr "У безкоштовній версії плагіна %s ви можете працювати лише з БУДЬ-ЯКОЮ валютою %s! Якщо ви хочете використовувати більше валют %s, ви можете зробити оновлення до преміум-версії %s плагіна"
+
+#: views/plugin_options.php:1342
+msgid "We work hard to make this plugin more effective tool for your e-shops, and ready to %s hear your review, suggestions and opinions %s, please share it with us!"
+msgstr "Ми докладаємо всіх зусиль, щоб зробити цей плагін більш ефективним інструментом для ваших електронних магазинів, і готові %s почути ваш відгук, пропозиції та думки %s, будь ласка, поділіться ним з нами!"
+
+#: views/woocs_order_metabox.php:41
+msgid "Change the order currency to any other"
+msgstr "Змініть валюту замовлення на будь-яку іншу"
+
+#: views/plugin_options.php:1405 views/plugin_options_2.php:407
+msgid "Get free API keys:"
+msgstr "Отримайте безкоштовні ключі API:"
+
+#: views/plugin_options.php:110
+msgid "In some servers there is troubles with sessions, and after currency selecting its reset to welcome currency or geo ip currency. In such case use transient. If it is possible on your hosting use Memcached or Redis!"
+msgstr "На деяких серверах виникають проблеми з сеансами, і після вибору валюти для її скидання для вітання валюти або географічної валюти ip. У такому випадку використовують перехідний. Якщо це можливо на вашому хостингу, використовуйте Memcached або Redis!"
+
+#: views/woocs_order_metabox.php:43
+msgid "Not possible to recalculate the order - because current base currency is %s, and order base currency is %s!"
+msgstr "Перерахувати замовлення неможливо - оскільки поточною базовою валютою є %s, а базовою валютою замовлення є %s!"
+
+#: views/plugin_options.php:130 views/plugin_options_2.php:465
+msgid "Port for: memcached or redis. Usually for memcached port is 11211, for redis port is 6379. Read your hosting documentation about what port to use for memcached or redis."
+msgstr "Порт для: memcached або redis. Зазвичай для порту memcached - 11211, для порту redis - 6379. Прочитайте документацію про хостинг про те, який порт використовувати для memcached або redis."
+
+#: views/woocs_order_metabox.php:47
+msgid "Recalculate current order with the selected currency."
+msgstr "Перерахуйте поточне замовлення з обраною валютою."
+
+#: views/plugin_options.php:120 views/plugin_options_2.php:447
+msgid "Server or socket for: memcached or redis. Usually is localhost. Read your hosting documentation about what host to use for memcached or redis."
+msgstr "Сервер або сокет для: memcached або redis. Зазвичай це localhost. Прочитайте документацію про хостинг про те, який хост використовувати для memcached або redis."
+
+#: views/plugin_options.php:129 views/plugin_options_2.php:455
+msgid "Storage port"
+msgstr "Порт зберігання"
+
+#: views/plugin_options.php:119 views/plugin_options_2.php:437
+msgid "Storage server"
+msgstr "Сервер зберігання"
+
+#: views/plugin_options.php:59 views/plugin_options_data.php:52
+msgid "PHP Session"
+msgstr "Сесія PHP"
+
+#: classes/woocs.php:1056
+msgid "Go Pro!"
+msgstr "ГОУ Про!"
+
+#: views/plugin_options.php:1080 views/plugin_options_2.php:1553
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: views/fixed/product_price_data.php:69 views/plugin_options.php:1063
+#: views/plugin_options_2.php:1523
+msgid "GeoIP profiles"
+msgstr "Профілі GeoIP"
+
+#: views/fixed/product_price_data.php:84
+msgid "Load countries from profile"
+msgstr "Завантажити країни з профілю"
+
+#: views/plugin_options.php:1076 views/plugin_options_2.php:1551
+msgid "Add new profile"
+msgstr "Додати новий профіль"
+
+#: views/plugin_options.php:1113 views/plugin_options_2.php:1594
+msgid "Add to:"
+msgstr "Додати до:"
+
+#: views/plugin_options.php:1106 views/plugin_options_2.php:1591
+msgid "Delete profile"
+msgstr "Видалити профіль"
+
+#: views/plugin_options.php:1105 views/plugin_options_2.php:1590
+msgid "Edit profile"
+msgstr "Редагувати профіль"
+
+#: classes/woocs.php:192
+msgid "EU countries"
+msgstr "країни ЄС"
+
+#: views/plugin_options.php:252 views/plugin_options_2.php:122
+msgid "GeoIP"
+msgstr "GeoIP"
+
+#: views/plugin_options.php:288 views/plugin_options_2.php:154
+msgid "Help"
+msgstr "допомога"
+
+#: views/plugin_options.php:1065
+msgid "Here you can create set of countries profiles to apply it then in the products by your business logic. %s!"
+msgstr "Тут ви можете створити набір профілів країн, щоб застосувати його тоді у продуктах відповідно до вашої бізнес-логіки. %s!"
+
+#: classes/woocs.php:6305
+msgid "is added!"
+msgstr "додано!"
+
+#: classes/woocs.php:6301
+msgid "is updated!"
+msgstr "оновлено!"
+
+#: classes/woocs.php:6289
+msgid "New profile"
+msgstr "Новий профіль"
+
+#: classes/woocs.php:6204
+msgid "No such profile"
+msgstr "Немає такого профілю"
+
+#: classes/woocs.php:6207
+msgid "Profile is deleted"
+msgstr "Профіль видалено"
+
+#: views/plugin_options.php:1087 views/plugin_options_2.php:1561
+msgid "Profiles"
+msgstr "Профілі"
+
+#: views/shortcodes/woocs_rates.php:61 views/shortcodes/woocs_rates.php:69
+msgid "Rate"
+msgstr "ставка"
+
+#: views/plugin_options.php:1117 views/plugin_options_2.php:1598
+msgid "Select currency..."
+msgstr "Виберіть валюту ..."
+
+#: views/plugin_options.php:1068 views/plugin_options_2.php:1544
+msgid "Set title"
+msgstr "Встановити заголовок"
+
+#: views/plugin_options.php:1065 views/plugin_options_2.php:1533
+msgid "This make work on rules settings for each product more fast"
+msgstr "Це пришвидшує роботу над налаштуваннями правил для кожного продукту"
+
+#: views/plugin_options.php:1077 views/plugin_options_2.php:1552
+msgid "Update profile"
+msgstr "Оновити профіль"
+
+#: views/plugin_options.php:1437 views/plugin_options.php:1438
+#: views/plugin_options_2.php:2076
+msgid "WOOT - WooCommerce Active Products Tables"
+msgstr "WOOT - таблиці активних продуктів WooCommerce"
+
+#: views/plugin_options.php:241 views/plugin_options_2.php:111
+msgid "Payments"
+msgstr "Платежі"
+
+#: views/plugin_options.php:371 views/plugin_options.php:386
+msgid "Visibility"
+msgstr "Видимість"
+
+#: classes/rate_alert.php:62
+msgid "Nope, maybe later!"
+msgstr "Ні, можливо, пізніше!"
+
+#: classes/rate_alert.php:66
+msgid "Ok, you deserve it"
+msgstr "Гаразд, ти на це заслуговуєш"
+
+#: classes/rate_alert.php:70
+msgid "Thank you, I did it!"
+msgstr "Дякую, у мене вийшло!"
+
+#: views/plugin_options.php:364 views/plugin_options.php:379
+#: views/plugin_options_2.php:224 views/plugin_options_2.php:2099
+msgid "Basic"
+msgstr "базовий"
+
+#: views/plugin_options.php:370 views/plugin_options.php:385
+#: views/plugin_options_2.php:237 views/plugin_options_2.php:2233
+msgid "Cents"
+msgstr "Центів"
+
+#: views/plugin_options.php:368 views/plugin_options.php:383
+#: views/plugin_options_2.php:232 views/plugin_options_2.php:2182
+msgid "Decimal"
+msgstr "Десятковий"
+
+#: views/plugin_options.php:372 views/plugin_options.php:387
+#: views/plugin_options.php:1262 views/plugin_options_2.php:238
+#: views/plugin_options_2.php:368 views/plugin_options_2.php:386
+#: views/plugin_options_2.php:404 views/plugin_options_2.php:426
+#: views/plugin_options_2.php:444 views/plugin_options_2.php:462
+#: views/plugin_options_2.php:495 views/plugin_options_2.php:513
+#: views/plugin_options_2.php:531 views/plugin_options_2.php:549
+#: views/plugin_options_2.php:567 views/plugin_options_2.php:585
+#: views/plugin_options_2.php:603 views/plugin_options_2.php:621
+#: views/plugin_options_2.php:639 views/plugin_options_2.php:657
+#: views/plugin_options_2.php:677 views/plugin_options_2.php:695
+#: views/plugin_options_2.php:713 views/plugin_options_2.php:731
+#: views/plugin_options_2.php:749 views/plugin_options_2.php:782
+#: views/plugin_options_2.php:804 views/plugin_options_2.php:829
+#: views/plugin_options_2.php:862 views/plugin_options_2.php:880
+#: views/plugin_options_2.php:906 views/plugin_options_2.php:924
+#: views/plugin_options_2.php:979 views/plugin_options_2.php:1008
+#: views/plugin_options_2.php:1026 views/plugin_options_2.php:1043
+#: views/plugin_options_2.php:1060 views/plugin_options_2.php:1075
+#: views/plugin_options_2.php:1123 views/plugin_options_2.php:1158
+#: views/plugin_options_2.php:1187 views/plugin_options_2.php:1208
+#: views/plugin_options_2.php:1228 views/plugin_options_2.php:1249
+#: views/plugin_options_2.php:1270 views/plugin_options_2.php:1291
+#: views/plugin_options_2.php:1322 views/plugin_options_2.php:1340
+#: views/plugin_options_2.php:1358 views/plugin_options_2.php:1386
+#: views/plugin_options_2.php:1979 views/plugin_options_2.php:2255
+msgid "Description"
+msgstr "опис"
+
+#: views/plugin_options.php:576 views/plugin_options_2.php:766
+msgid "Direct use"
+msgstr "Безпосереднє використання"
+
+#: views/plugin_options.php:570 views/plugin_options_2.php:760
+msgid "Disable on pages"
+msgstr "Вимкнути на сторінках"
+
+#: views/plugin_options.php:571
+msgid "Disabling or Enabling WOOCS on the described pages only. Use comma and pages slugs. Example: blog,account"
+msgstr "Вимкнення або ввімкнення WOOCS лише на описаних сторінках. Використовуйте комах і кулі сторінок. Приклад: блог, акаунт"
+
+#: classes/woocs.php:1618
+msgid "Loading"
+msgstr "Завантаження"
+
+#: views/plugin_options.php:367 views/plugin_options.php:382
+#: views/plugin_options_2.php:230 views/plugin_options_2.php:2138
+msgid "Position"
+msgstr "становище"
+
+#: views/plugin_options.php:549 views/plugin_options_2.php:724
+msgid "Prices preloader"
+msgstr "Ціни попереднього завантажувача"
+
+#: views/plugin_options.php:369 views/plugin_options.php:384
+msgid "Rate and Interest"
+msgstr "Ставка та відсотки"
+
+#: views/plugin_options.php:584 views/plugin_options_2.php:774
+msgid "Reverse this option"
+msgstr "Змініть цей параметр"
+
+#: views/plugin_options.php:577 views/plugin_options_2.php:767
+msgid "Reverse use"
+msgstr "Зворотне використання"
+
+#: classes/woocs.php:1619
+msgid "Save changes please!"
+msgstr "Збережіть зміни, будь ласка!"
+
+#: views/plugin_options.php:366 views/plugin_options.php:381
+#: views/plugin_options_2.php:2130
+msgid "Symbol"
+msgstr "символ"
+
+#: views/plugin_options.php:1409
+msgid "Currencylayer"
+msgstr "Валютний шар"
+
+#: views/plugin_options.php:1408
+msgid "Open exchange rates"
+msgstr "Відкриті курси валют"
+
+#: classes/statistic.php:276
+msgid "Currencies popularity"
+msgstr "Популярність валют"
+
+#: classes/rate_alert.php:46
+msgid "support"
+msgstr "підтримка"
+
+#: views/plugin_options.php:1518
+msgid "+ to your interest in the rate, for example: 0.15"
+msgstr "+ до вашого інтересу до ставки, наприклад: 0,15"
+
+#: views/plugin_options.php:303
+msgid "Add custom money sign"
+msgstr "Додайте власний знак грошей"
+
+#: views/plugin_options.php:1152 views/plugin_options_2.php:1639
+msgid "Chart type: bar"
+msgstr "Тип діаграми: бар"
+
+#: views/plugin_options.php:1151 views/plugin_options_2.php:1638
+msgid "Chart type: pie"
+msgstr "Тип діаграми: пиріг"
+
+#: views/plugin_options.php:318 views/plugin_options_2.php:185
+msgid "Chosen dark drop-down"
+msgstr "Вибране темне спадне меню"
+
+#: views/plugin_options.php:317 views/plugin_options_2.php:184
+msgid "Chosen drop-down"
+msgstr "Вибране спадне меню"
+
+#: views/plugin_options.php:998 views/plugin_options.php:1051
+msgid "clear all"
+msgstr "очистити все"
+
+#: views/plugin_options.php:707 views/plugin_options_2.php:1011
+msgid "Collect currencies switching statistic for business purposes. No any private data of customers collects, only currency, country and time of switching. Also statistic for order currencies is there."
+msgstr "Збирайте статистику перемикання валют для комерційних цілей. Жодні приватні дані клієнтів не збираються, лише валюта, країна та час переходу. Також є статистика для валют замовлення."
+
+#: classes/statistic.php:279
+msgid "Countries popularity"
+msgstr "Популярність країн"
+
+#: views/plugin_options.php:1171
+msgid "currency"
+msgstr "валюта"
+
+#: views/plugin_options.php:90
+msgid "Currency aggregators. Note: If you know aggregator which not is represented in WOOCS write request on support please with suggestion to add it!"
+msgstr "Агрегатори валют. Примітка: Якщо ви знаєте агрегатор, який не представлений у WOOCS, напишіть запит на підтримку, будь ласка, з пропозицією додати його!"
+
+#: views/plugin_options.php:316 views/plugin_options_2.php:183
+msgid "ddslick drop-down"
+msgstr "ddslick спадне меню"
+
+#: views/plugin_options.php:314 views/plugin_options_2.php:181
+msgid "Flags (as images)"
+msgstr "Прапори (як зображення)"
+
+#: views/plugin_options.php:1196 views/plugin_options_2.php:1685
+msgid "For currencies - aggregated data about count of countries which users selected currencies on the site front. For orders - count of orders made from countries, detected by selected country in the billing address."
+msgstr "Для валют - зведені дані про кількість країн, які користувачі обрали валюти на веб-сайті. Для замовлень - підрахунок замовлень, зроблених з країн, виявлених вибраною країною в адресі виставлення рахунку."
+
+#: views/plugin_options.php:1195 views/plugin_options_2.php:1678
+msgid "For currencies - aggregated data about selected currencies on the site front. For orders - count of orders made in the selected currencies."
+msgstr "Для валют - зведені дані про вибрані валюти на веб-сайті. Для замовлень - підрахунок замовлень, зроблених у вибраній валюті."
+
+#: views/plugin_options.php:1188 views/plugin_options_2.php:1668
+msgid "from"
+msgstr "від"
+
+#: classes/woocs.php:825
+msgid "here"
+msgstr "тут"
+
+#: views/plugin_options.php:325 views/plugin_options_2.php:192
+msgid "How to display currency switcher (by default) on the site front. (NEW) Make your attention on skins with numbers - you can use them on the same page with different designs in shortcode [woocs] described in its attribute style and style number (see Codex page in Info Help tab)!"
+msgstr "Як відобразити перемикач валют (за замовчуванням) на веб-сайті. (НОВО) Зверніть увагу на скіни з цифрами - ви можете використовувати їх на одній сторінці з різними конструкціями у шорткоді [woocs], описаному в його стилі атрибутів та номері стилю (див. Сторінку Codex на вкладці \"Довідка\")!"
+
+#: views/plugin_options.php:1161 views/plugin_options_2.php:1706
+msgid "If in tab Options activated option I am using cache plugin on my site - to avoid double data for statistical data registration in tab Options activate option No GET data in link!"
+msgstr "Якщо у вкладці Параметри активована опція, я використовую плагін кеш-пам’яті на своєму сайті - щоб уникнути подвійних даних для реєстрації статистичних даних у вкладці Параметри активувати опцію Не отримувати дані у посиланні!"
+
+#: views/plugin_options.php:1330 views/plugin_options.php:1412
+msgid "If WOOCS settings panel looks incorrect or you have JavaScript errors (after update) - firstly"
+msgstr "Якщо панель налаштувань WOOCS виглядає неправильно або у вас є помилки JavaScript (після оновлення) - по-перше"
+
+#: views/plugin_options.php:1318
+msgid "If you have an idea about css+js template - send request on support please where describe your vision."
+msgstr "Якщо ви маєте уявлення про шаблон css + js - надішліть запит на підтримку, будь ласка, де опишіть своє бачення."
+
+#: views/plugin_options.php:1159
+msgid "If you have ideas about scenarios of the statistic please share and discuss them on %s"
+msgstr "Якщо у вас є ідеї щодо сценаріїв статистики, поділіться ними та обговоріть їх на %s"
+
+#: views/plugin_options.php:80
+msgid "In wich currency show prices for first visit of your customer on your site. Do not do it private to avoid logic mess!"
+msgstr "У валюті, в якій вказані ціни за перший візит вашого клієнта на ваш сайт. Не робіть це приватно, щоб уникнути логічного безладу!"
+
+#: views/plugin_options.php:1518 views/plugin_options_2.php:2173
+msgid "interest"
+msgstr "інтерес"
+
+#: views/plugin_options.php:1467
+msgid "Money signs"
+msgstr "Гроші знаки"
+
+#: classes/woocs.php:1617
+msgid "Native WooCommerce price filter does not see data generated by this feature."
+msgstr "Власний ціновий фільтр WooCommerce не бачить даних, створених цією функцією."
+
+#: views/plugin_options.php:310 views/plugin_options_2.php:177
+msgid "Not styled drop-down"
+msgstr "Не стильове розкривне меню"
+
+#: views/plugin_options.php:1172
+msgid "orders (completed)"
+msgstr "замовлення (виконані)"
+
+#: views/plugin_options.php:1550
+msgid "Private"
+msgstr "приватний"
+
+#: views/plugin_options.php:1549
+msgid "Public"
+msgstr "громадськості"
+
+#: views/plugin_options.php:1330 views/plugin_options.php:1412
+#: views/plugin_options_2.php:2038
+msgid "reset the browser cache"
+msgstr "скинути кеш браузера"
+
+#: views/plugin_options.php:998 views/plugin_options.php:1051
+msgid "select all"
+msgstr "вибрати все"
+
+#: views/shortcodes/styles/style-3/index.php:83
+msgid "Select Currency"
+msgstr "Виберіть Валюта"
+
+#: views/plugin_options.php:1558
+msgid "Show currency for all on the site front or Hide for private moments in wp admin panel using only."
+msgstr "Показувати валюту для всіх на фронті сайту або Приховувати для приватних моментів у панелі адміністрування wp, використовуючи лише."
+
+#: views/plugin_options.php:560 views/plugin_options_2.php:742
+msgid "Show options button on top admin bar."
+msgstr "Показати кнопку параметрів у верхній панелі адміністратора."
+
+#: views/plugin_options.php:561
+msgid "Show WOOCS options button on top admin bar for quick access. Very handy for active work. Visible for site administrators only!"
+msgstr "Показати кнопку параметрів WOOCS на верхній панелі адміністратора для швидкого доступу. Дуже зручний для активної роботи. Доступно лише для адміністраторів сайту!"
+
+#: views/plugin_options.php:262 views/plugin_options.php:706
+#: views/plugin_options.php:717 views/plugin_options_2.php:131
+#: views/plugin_options_2.php:990 views/plugin_options_2.php:1001
+#: views/plugin_options_2.php:1628
+msgid "Statistic"
+msgstr "статистика"
+
+#: views/plugin_options.php:311 views/plugin_options_2.php:178
+msgid "Style #1"
+msgstr "стиль №1"
+
+#: views/plugin_options.php:312 views/plugin_options_2.php:179
+msgid "Style #2"
+msgstr "стиль №2"
+
+#: views/plugin_options.php:313 views/plugin_options_2.php:180
+msgid "Style #3"
+msgstr "стиль №3"
+
+#: views/plugin_options.php:1159 views/plugin_options_2.php:1698
+msgid "the plugin forum"
+msgstr "форум плагінів"
+
+#: views/plugin_options.php:302 views/plugin_options_2.php:168
+msgid "Update all rates"
+msgstr "Оновіть усі тарифи"
+
+#: views/plugin_options.php:1312
+msgid "WooCommerce Currency Switcher SUPPORT"
+msgstr "Підтримка валютного перемикача WooCommerce"
+
+#: views/plugin_options.php:319 views/plugin_options_2.php:186
+msgid "wSelect drop-down"
+msgstr "wВиберіть спадне меню"
+
+#: views/plugin_options.php:1161 views/plugin_options.php:1405
+#: views/plugin_options.php:1412 views/plugin_options_2.php:1705
+#: views/plugin_options_2.php:2038
+msgid "Note"
+msgstr "Нотатка"
+
+#: views/fixed/product_coupon_data.php:42
+msgid "FOX - the coupon fixed amount"
+msgstr "FOX - купон з фіксованою сумою"
+
+#: views/plugin_options.php:99 views/plugin_options_2.php:397
+msgid "Aggregator API key"
+msgstr "Ключ API агрегатора"
+
+#: classes/woocs.php:2712 classes/woocs.php:3081 classes/woocs.php:3112
+#: classes/woocs.php:3139 classes/woocs.php:3165
+msgid "Please use the API key"
+msgstr "Будь ласка, використовуйте ключ API"
+
+#: views/plugin_options.php:100
+msgid "Some aggregators require an API key. See the hint below how to get it!"
+msgstr "Деякі агрегатори потребують ключа API. Дивіться підказку нижче, як її отримати!"
+
+#: views/plugin_options.php:1406 views/plugin_options_2.php:407
+msgid "The Free Currency Converter"
+msgstr "Безкоштовний конвертер валют"
+
+#: classes/woocs.php:2467
+msgid "Your country is: %s. (defined by woocommerce GeoIP functionality)"
+msgstr "Ваша країна: %s. (визначається функцією woocommerce GeoIP)"
+
+#: views/plugin_options.php:1407
+msgid "Fixer"
+msgstr "Закріплювач"
+
+#: views/fixed/product_user_role_data.php:61
+msgid "FOX - the price based on user role"
+msgstr "FOX - ціна на основі ролі користувача"
+
+#: views/fixed/product_user_role_data.php:45
+msgid "select user role"
+msgstr "вибрати роль користувача"
+
+#: views/plugin_options.php:1490 views/plugin_options_2.php:2153
+msgid "$ P - left space"
+msgstr "$ P - лівий пробіл"
+
+#: views/plugin_options.php:1494 views/plugin_options_2.php:2157
+msgid "$P - left"
+msgstr "$ P - ліворуч"
+
+#: views/plugin_options.php:959 views/plugin_options_2.php:1404
+msgid "Behavior"
+msgstr "Поведінка"
+
+#: views/plugin_options.php:981 views/plugin_options_2.php:1434
+msgid "Choice currencies"
+msgstr "Вибір валют"
+
+#: views/plugin_options.php:1324 views/plugin_options_2.php:1751
+msgid "Codex"
+msgstr "Кодекс"
+
+#: views/plugin_options.php:140 views/plugin_options_2.php:498
+msgid "Currencies rate auto update by WordPress cron."
+msgstr "Автоматичне оновлення валют здійснюється за допомогою WordPress cron."
+
+#: views/plugin_options.php:1320 views/plugin_options_2.php:1850
+msgid "Free flags images"
+msgstr "Безкоштовні зображення прапорів"
+
+#: views/plugin_options.php:684 views/plugin_options_2.php:945
+msgid "Gives ability to set different prices for each user role"
+msgstr "Дає можливість встановлювати різні ціни для кожної ролі користувача"
+
+#: views/fixed/product_user_role_data.php:61
+msgid "Gives ability to set different prices for each user role. Native WooCommerce price filter is blind for this data!"
+msgstr "Дає можливість встановлювати різні ціни для кожної ролі користувача. Власний ціновий фільтр WooCommerce для цих даних сліпий!"
+
+#: views/plugin_options.php:1528 views/plugin_options_2.php:2238
+msgid "Hide cents"
+msgstr "Сховати центи"
+
+#: views/plugin_options.php:505
+msgid "Hide/Show payments systems on checkout page depending on the current currency"
+msgstr "Сховати / Показати платіжні системи на сторінці оплати залежно від поточної валюти"
+
+#: views/plugin_options.php:1404 views/plugin_options_2.php:2037
+msgid "If you want let your customers pay in their selected currency in tab Advanced set the option Is multiple allowed to Yes."
+msgstr "Якщо ви хочете, щоб ваші клієнти платили у вибраній валюті на вкладці Додатково встановіть параметр Дозволено кілька для Так."
+
+#: views/plugin_options.php:683 views/plugin_options_2.php:935
+msgid "Individual prices based on user role"
+msgstr "Індивідуальні ціни залежно від ролі користувача"
+
+#: views/plugin_options.php:954 views/plugin_options_2.php:1399
+msgid "Is hidden"
+msgstr "Прихований"
+
+#: views/plugin_options.php:955 views/plugin_options_2.php:1400
+msgid "Is shown"
+msgstr "Показано"
+
+#: views/plugin_options.php:1358 views/plugin_options_2.php:1892
+msgid "More power for your shop"
+msgstr "Більше потужності для вашого магазину"
+
+#: views/plugin_options.php:735 views/plugin_options_2.php:1078
+msgid "Native WooCommerce price filter is blind for all data generated by marked features"
+msgstr "Власний ціновий фільтр WooCommerce сліпий для всіх даних, що генеруються за допомогою позначених функцій"
+
+#: views/plugin_options.php:1486 views/plugin_options_2.php:2149
+msgid "P $ - right space"
+msgstr "P $ - правий пробіл"
+
+#: views/plugin_options.php:1482 views/plugin_options_2.php:2145
+msgid "P$ - right"
+msgstr "P $ - правильно"
+
+#: views/plugin_options.php:948 views/plugin_options_2.php:1393
+msgid "Payments behavior"
+msgstr "Поведінка платежів"
+
+#: views/plugin_options.php:504 views/plugin_options.php:942
+#: views/plugin_options_2.php:1019 views/plugin_options_2.php:1378
+msgid "Payments rules"
+msgstr "Правила платежів"
+
+#: views/plugin_options.php:1352
+msgid "Quick introduction"
+msgstr "Швидке введення"
+
+#: views/plugin_options.php:1328 views/plugin_options_2.php:1837
+msgid "Read wiki about Currency Active codes"
+msgstr "Прочитайте вікі про коди валют"
+
+#: classes/woocs.php:6108
+msgid "Recalculate all orders"
+msgstr "Перерахуйте всі замовлення"
+
+#: classes/woocs.php:6108
+msgid "Recalculate all orders with basic currency. Recommended test this option on the clone of your site! Read the documentation of the plugin about it!"
+msgstr "Перерахуйте всі замовлення з основною валютою. Рекомендуємо протестувати цю опцію на клоні вашого сайту! Прочитайте документацію плагіна про це!"
+
+#: views/plugin_options.php:949
+msgid "Should be payments system be hidden for selected currencies or vice versa shown!"
+msgstr "Має бути прихованою платіжну систему для вибраних валют або показано навпаки!"
+
+#: views/plugin_options.php:526 views/plugin_options_2.php:688
+msgid "Show approx. price"
+msgstr "Показати приблизно ціна"
+
+#: views/plugin_options.php:527
+msgid "Show approximate price on the shop and the single product page with currency of user defined by IP in the GeoIp rules tab. Works only with currencies rates data and NOT with fixed prices rules and geo rules."
+msgstr "Покажіть приблизну ціну в магазині та на окремій сторінці товару з валютою користувача, визначеною IP-адресою, на вкладці правил GeoIp. Працює лише з даними курсів валют, а НЕ з правилами фіксованих цін і гео правилами."
+
+#: views/plugin_options.php:1527 views/plugin_options_2.php:2237
+msgid "Show cents"
+msgstr "Показати центи"
+
+#: views/fixed/product_user_role_data.php:9
+msgid "The price based on user role"
+msgstr "Ціна залежить від ролі користувача"
+
+#: views/plugin_options.php:1326 views/plugin_options_2.php:1864
+msgid "Video tutorials"
+msgstr "Відео інструкції"
+
+#: views/plugin_options.php:450 views/plugin_options_2.php:578
+msgid "No GET data in link"
+msgstr "Немає даних GET у посиланні"
+
+#: views/plugin_options_2.php:588
+msgid "Switches currency without GET parameters (?currency=USD) in the link"
+msgstr "Перемикає валюту без параметрів GET (? Currency = USD) за посиланням"
+
+#: views/plugin_options.php:922 views/plugin_options_2.php:1308
+msgid "Show on all devices"
+msgstr "Показати на всіх пристроях"
+
+#: views/plugin_options.php:868 views/plugin_options_2.php:1218
+msgid "Basic field(s)"
+msgstr "Основні поля"
+
+#: views/plugin_options.php:916 views/plugin_options_2.php:1302
+msgid "Behavior for devices"
+msgstr "Поведінка пристроїв"
+
+#: views/plugin_options.php:928 views/plugin_options_2.php:1314
+msgid "Choice behaviour"
+msgstr "Вибір поведінки"
+
+#: views/plugin_options.php:808 views/plugin_options_2.php:1180
+msgid "Choice side"
+msgstr "Сторона вибору"
+
+#: views/plugin_options.php:783 views/plugin_options_2.php:1147
+msgid "Choice skin"
+msgstr "Вибір шкіри"
+
+#: views/plugin_options.php:776 views/plugin_options_2.php:1140
+msgid "Classic blocks"
+msgstr "Класичні блоки"
+
+#: views/plugin_options.php:818 views/plugin_options_2.php:1211
+msgid "Distance from the top of the screen to the switcher html block. You can set in px or in %. Example 1: 100px. Example 2: 10%."
+msgstr "Відстань від верхньої частини екрана до блоку HTML комутатора. Ви можете встановити в px або в%. Приклад 1: 100 пікс. Приклад 2: 10%."
+
+#: views/plugin_options.php:755
+msgid "Enable/Disable"
+msgstr "Уможливити унеможливити"
+
+#: views/plugin_options.php:756
+msgid "Enable/Disable the side currency switcher on your page"
+msgstr "Увімкніть / вимкніть бічний перемикач валют на вашій сторінці"
+
+#: views/plugin_options.php:790 views/plugin_options_2.php:1153
+msgid "enter roll width"
+msgstr "введіть ширину рулону"
+
+#: views/plugin_options.php:924 views/plugin_options_2.php:1310
+msgid "Hide on mobile devices"
+msgstr "Сховати на мобільних пристроях"
+
+#: views/plugin_options.php:904 views/plugin_options_2.php:1281
+msgid "Hide on the pages"
+msgstr "Сховати на сторінках"
+
+#: views/plugin_options.php:845 views/plugin_options_2.php:1351
+msgid "Hover color"
+msgstr "Колір наведення"
+
+#: views/plugin_options.php:880 views/plugin_options_2.php:1239
+msgid "Hover field(s)"
+msgstr "Поле наведення курсору"
+
+#: views/plugin_options.php:803 views/plugin_options_2.php:1175
+msgid "Left"
+msgstr "Ліве"
+
+#: views/plugin_options.php:835 views/plugin_options_2.php:1333
+msgid "Main color"
+msgstr "Основний колір"
+
+#: views/plugin_options.php:836 views/plugin_options_2.php:1343
+msgid "Main color which coloring the switcher elements"
+msgstr "Основний колір, який забарвлює елементи перемикача"
+
+#: views/plugin_options.php:804 views/plugin_options_2.php:1176
+msgid "Right"
+msgstr "правий"
+
+#: views/plugin_options.php:777 views/plugin_options_2.php:1141
+msgid "Roll blocks"
+msgstr "Рулонні блоки"
+
+#: views/plugin_options.php:779 views/plugin_options_2.php:1142
+msgid "Round select"
+msgstr "Круглий вибір"
+
+#: views/plugin_options.php:923 views/plugin_options_2.php:1309
+msgid "Show on mobile devices only"
+msgstr "Показувати лише на мобільних пристроях"
+
+#: views/plugin_options.php:892 views/plugin_options_2.php:1260
+msgid "Show on the pages"
+msgstr "Показати на сторінках"
+
+#: views/plugin_options.php:917
+msgid "Show/Hide on mobile device (highest priority)"
+msgstr "Показати / сховати на мобільному пристрої (найвищий пріоритет)"
+
+#: views/plugin_options.php:797 views/plugin_options_2.php:147
+#: views/plugin_options_2.php:1169
+msgid "Side"
+msgstr "сторона"
+
+#: views/plugin_options.php:279 views/plugin_options_2.php:1096
+msgid "Side switcher"
+msgstr "Бічний перемикач"
+
+#: views/plugin_options.php:770 views/plugin_options_2.php:1134
+msgid "Skin"
+msgstr "Шкіра"
+
+#: views/plugin_options.php:771
+msgid "Style of the switcher on the site front"
+msgstr "Стиль перемикача на передній частині сайту"
+
+#: views/plugin_options.php:798 views/plugin_options_2.php:1190
+msgid "The side where the switcher is be placed"
+msgstr "Сторона, де розміщується перемикач"
+
+#: views/plugin_options.php:846 views/plugin_options_2.php:1361
+msgid "The switcher color when mouse hovering"
+msgstr "Колір перемикача під час наведення миші"
+
+#: views/plugin_options.php:1422 views/plugin_options_2.php:2060
+msgid "UPGRADE to Full version"
+msgstr "ОНОВИТИ до повної версії"
+
+#: views/plugin_options.php:881 views/plugin_options_2.php:1252
+msgid "What content to show in the switcher after mouse hover on any currency there. Variants:  __CODE__ __FLAG___ __SIGN__ __DESCR__"
+msgstr "Який вміст відображати в комутаторі після наведення курсору миші на будь-яку валюту там. Варіанти:  __CODE__ __FLAG___ __SIGN__ __DESCR__"
+
+#: views/plugin_options.php:869 views/plugin_options_2.php:1231
+msgid "What content to show in the switcher after the site page loading. Variants:  __CODE__ __FLAG___ __SIGN__ __DESCR__"
+msgstr "Який вміст відображати в комутаторі після завантаження сторінки сайту. Варіанти:  __CODE__ __FLAG___ __SIGN__ __DESCR__"
+
+#: views/plugin_options.php:905 views/plugin_options_2.php:1294
+msgid "Where on the site the switcher should be hidden. If any value is presented here switcher will be hidden on that pages and visible on all another ones. You can use pages IDs using comma, example: 28,34,232. Also you can use special words as: product, shop, checkout, front_page, woocommerce"
+msgstr "Де на сайті комутатор повинен бути прихованим. Якщо тут представлено якесь значення, перемикач буде прихований на цих сторінках і видимий на всіх інших. Ви можете використовувати ідентифікатори сторінок, використовуючи кому, наприклад: 28,34,232. Також ви можете використовувати спеціальні слова як: товар, магазин, замовлення, передня сторінка, woocommerce"
+
+#: views/plugin_options.php:1432 views/plugin_options.php:1433
+#: views/plugin_options_2.php:2071
+msgid "WOOBE - WooCommerce Bulk Editor Professional"
+msgstr "WOOBE - професійний редактор масових редакторів WooCommerce"
+
+#: views/plugin_options.php:893 views/plugin_options_2.php:1273
+msgid "Where on the site the switcher should be visible. If any value is presented here switcher will be hidden on all another pages which not presented in this field. You can use pages IDs using comma, example: 28,34,232. Also you can use special words as: product, shop, checkout, front_page, woocommerce"
+msgstr "Де на сайті має бути видно комутатор. Якщо тут представлено якесь значення, перемикач буде приховано на всіх інших сторінках, які не представлені в цьому полі. Ви можете використовувати ідентифікатори сторінок, використовуючи кому, наприклад: 28,34,232. Також ви можете використовувати спеціальні слова як: товар, магазин, замовлення, передня сторінка, woocommerce"
+
+#: views/plugin_options.php:817 views/plugin_options_2.php:1198
+msgid "Top margin"
+msgstr "Верхній зовнішній відступ"
+
+#: classes/woocs.php:5867
+msgid "change the rate and this description to the right values"
+msgstr "змінити швидкість і цей опис на потрібні значення"
+
+#: classes/fixed/fixed_shipping_free.php:28
+msgid "Minimum order amount in %s"
+msgstr "Мінімальна сума замовлення в %s"
+
+#: views/fixed/product_coupon_restriction_data.php:11
+msgid "Minimum spend"
+msgstr "Мінімальні витрати"
+
+#: views/fixed/product_coupon_data.php:31
+msgid "The coupon fixed amount rules"
+msgstr "Правила фіксованої суми купона"
+
+#. Description of the plugin
+#: index.php
+msgid "Currency Switcher for WooCommerce that allows to the visitors and customers on your woocommerce store site switch currencies and optionally apply selected currency on checkout"
+msgstr "Перемикач валют для WooCommerce, який дозволяє відвідувачам та клієнтам на вашому сайті магазину woocommerce змінювати валюти та додатково застосовувати вибрану валюту при оплаті"
+
+#: classes/fixed/fixed_shipping.php:28
+msgid "Fixed cost %s"
+msgstr "%s із фіксованою вартістю"
+
+#: views/fixed/product_coupon_data.php:42
+msgid "Here you can set FIXED amount for the coupon for any currency you want. In the case of empty amount field recounting by rate will work!"
+msgstr "Тут ви можете встановити фіксовану суму купона для будь-якої валюти, яку ви хочете. У разі порожньої суми поле перерахування за курсом спрацює!"
+
+#: views/plugin_options.php:664 views/plugin_options_2.php:899
+msgid "Individual fixed amount for coupon"
+msgstr "Індивідуальна фіксована сума купона"
+
+#: views/plugin_options.php:674 views/plugin_options_2.php:917
+msgid "Individual fixed amount for shipping"
+msgstr "Індивідуальна фіксована сума для доставки"
+
+#: views/fixed/product_coupon_restriction_data.php:15
+msgid "Maximum spend"
+msgstr "Максимальні витрати"
+
+#: views/fixed/product_coupon_restriction_data.php:35
+msgid "The coupon fixed Minimum and Maximum spend rules"
+msgstr "Купон фіксує правила мінімальних та максимальних витрат"
+
+#: views/plugin_options.php:665 views/plugin_options_2.php:909
+msgid "You will be able to set FIXED amount for coupon for each currency. ATTENTION: 'Is multiple allowed' should be enabled!"
+msgstr "Ви зможете встановити фіксовану суму купона для кожної валюти. УВАГА: Потрібно ввімкнути опцію \"Дозволено кілька\"!"
+
+#: views/plugin_options.php:675 views/plugin_options_2.php:927
+msgid "You will be able to set FIXED amount for each currency for free and all another shipping ways. ATTENTION: 'Is multiple allowed' should be enabled!"
+msgstr "Ви зможете безкоштовно встановити ФІКСОВАНУ суму для кожної валюти та всіх інших способів доставки. УВАГА: Потрібно ввімкнути опцію \"Дозволено кілька\"!"
+
+#: views/fixed/product_coupon_data.php:11
+msgid "Coupon amount"
+msgstr "Сума купону"
+
+#: views/shortcodes/woocs.php:6 views/shortcodes/woocs_converter.php:6
+#: views/shortcodes/woocs_rates.php:4
+msgid "Warning: Woocommerce is not activated"
+msgstr "Попередження: Woocommerce не активовано"
+
+#: views/plugin_options.php:301
+msgid "Add Currency"
+msgstr "Додати валюту"
+
+#: views/plugin_options.php:199 views/plugin_options_2.php:33
+msgid "Actualized for WooCommerce v.%s.x"
+msgstr "Актуалізовано для WooCommerce v.%s.x"
+
+#: classes/woocs.php:4016
+msgid "The maximum spend for this coupon is %s."
+msgstr "Максимальна сума витрат за цей купон - %s."
+
+#: classes/woocs.php:4021
+msgid "The minimum spend for this coupon is %s."
+msgstr "Мінімальні витрати на цей купон складають %s."
+
+#: views/plugin_options.php:650 views/plugin_options_2.php:886
+msgid "Your country is: %s"
+msgstr "Ваша країна: %s"
+
+#: views/plugin_options.php:1015 views/plugin_options_2.php:1475
+msgid "GeoIP rules"
+msgstr "Правила GeoIP"
+
+#: views/fixed/product_price_data.php:12 views/fixed/product_price_data.php:42
+#: views/fixed/product_user_role_data.php:24
+msgid "Regular price"
+msgstr "Звичайна ціна"
+
+#: views/fixed/product_coupon_data.php:54
+#: views/fixed/product_coupon_restriction_data.php:59
+#: views/fixed/product_price_data.php:128
+msgid "Add all"
+msgstr "Додати все"
+
+#: views/fixed/product_price_data.php:154
+#: views/fixed/product_user_role_data.php:63
+msgid "Add group"
+msgstr "Додати групу"
+
+#: views/fixed/product_price_data.php:152
+msgid "FOX - the product custom GeoIP rules"
+msgstr "FOX - продукт користувацьких правил GeoIP"
+
+#: views/fixed/product_price_data.php:116
+msgid "FOX - the product fixed prices"
+msgstr "FOX - продукт з фіксованими цінами"
+
+#: views/fixed/product_price_data.php:18 views/fixed/product_price_data.php:48
+#: views/fixed/product_user_role_data.php:30
+msgid "Sale price"
+msgstr "Ціна продажу"
+
+#: views/plugin_options.php:701 views/plugin_options_2.php:971
+msgid "a hint"
+msgstr "підказка"
+
+#: views/fixed/product_coupon_data.php:53
+#: views/fixed/product_coupon_restriction_data.php:58
+#: views/fixed/product_price_data.php:127
+msgid "Add"
+msgstr "додавати"
+
+#: views/plugin_options.php:233 views/plugin_options_2.php:101
+msgid "Advanced"
+msgstr "Передовий"
+
+#: views/plugin_options.php:483
+msgid "After cron done - new currency rates will be sent on the site admin email. ATTENTION: if you not got emails - it is mean that PHP function mail() doesnt work on your server or sending emails by this function is locked."
+msgstr "Після завершення cron - нові курси валют будуть надіслані на електронну адресу адміністратора сайту. УВАГА: якщо у вас немає електронних листів - це означає, що функція PHP mail () не працює на вашому сервері або надсилання електронних листів за допомогою цієї функції заблоковано."
+
+#: classes/fixed/fixed_shipping.php:30 classes/fixed/fixed_shipping_free.php:30
+#: views/fixed/product_coupon_data.php:12
+#: views/fixed/product_coupon_restriction_data.php:12
+#: views/fixed/product_coupon_restriction_data.php:16
+#: views/fixed/product_price_data.php:13 views/fixed/product_price_data.php:19
+#: views/fixed/product_price_data.php:43 views/fixed/product_price_data.php:49
+#: views/fixed/product_user_role_data.php:25
+#: views/fixed/product_user_role_data.php:31
+msgid "auto"
+msgstr "автоматичний"
+
+#: views/plugin_options.php:646 views/plugin_options_2.php:873
+msgid "Checkout by GeoIP rules"
+msgstr "Оплата за правилами GeoIP"
+
+#: views/plugin_options.php:482 views/plugin_options_2.php:632
+msgid "Email notice about \"Rate auto update\" results"
+msgstr "Повідомлення електронною поштою про результати \\ \"Оцінити автоматичне оновлення \""
+
+#: views/fixed/product_price_data.php:152
+msgid "Here you can set prices in the basic currency for different countries, and recount will be done relatively of this values. ATTENTION: fixed price has higher priority!"
+msgstr "Тут ви можете встановити ціни в основній валюті для різних країн, і перерахунок проводитиметься відносно цих значень. УВАГА: фіксована ціна має вищий пріоритет!"
+
+#: views/plugin_options.php:629 views/plugin_options_2.php:840
+msgid "Individual fixed prices rules for each product"
+msgstr "Індивідуальні правила фіксованих цін на кожен товар"
+
+#: views/plugin_options.php:693 views/plugin_options_2.php:955
+msgid "Individual GeoIP rules for each product"
+msgstr "Індивідуальні правила GeoIP для кожного продукту"
+
+#: views/plugin_options.php:730 views/plugin_options_2.php:1070
+msgid "Notes*"
+msgstr "Примітки *"
+
+#: views/fixed/product_price_data.php:61
+msgid "select some countries"
+msgstr "виберіть деякі країни"
+
+#: views/plugin_options.php:516
+msgid "Show approximate amount on the checkout and the cart page with currency of user defined by IP in the GeoIp rules tab. Works only with currencies rates data and NOT with fixed prices rules and geo rules."
+msgstr "Покажіть приблизну суму на касі та сторінці кошика з валютою користувача, визначеною IP-адресою, на вкладці Правила GeoIp. Працює лише з даними курсів валют, а НЕ з правилами фіксованих цін і гео правилами."
+
+#: views/fixed/product_price_data.php:102
+msgid "The product custom GeoIP rules"
+msgstr "Спеціальні правила GeoIP продукту"
+
+#: views/fixed/product_price_data.php:98
+msgid "The product fixed prices rules"
+msgstr "Правила фіксованих цін на товар"
+
+#: views/plugin_options.php:639 views/plugin_options.php:700
+#: views/plugin_options_2.php:853 views/plugin_options_2.php:965
+msgid "Watch video instructions"
+msgstr "Перегляньте відео інструкції"
+
+#: views/plugin_options.php:694 views/plugin_options_2.php:982
+msgid "You will be able to set different prices for each product (in BASIC currency) for different countries"
+msgstr "Ви зможете встановити різні ціни на кожен товар (у базовій валюті) для різних країн"
+
+#: views/plugin_options.php:630 views/plugin_options_2.php:865
+msgid "You will be able to set FIXED prices for simple and variable products. ATTENTION: 'Is multiple allowed' should be enabled!"
+msgstr "Ви зможете встановити ФІКСОВАНІ ціни на прості та змінні товари. УВАГА: Потрібно ввімкнути опцію \"Дозволено кілька\"!"
+
+#: classes/woocs.php:2469
+msgid "Your country is not defined! Troubles with GeoIp service."
+msgstr "Ваша країна не визначена! Проблеми з послугою GeoIp."
+
+#: views/plugin_options.php:652 views/plugin_options_2.php:888
+msgid "Your country is not defined! Troubles with internet connection or GeoIp service."
+msgstr "Ваша країна не визначена! Проблеми з підключенням до Інтернету або послугою GeoIp."
+
+#: views/plugin_options.php:647
+msgid "Force the customers to pay on checkout page by rules defined in 'GeoIP rules' tab. <b>ATTENTION</b>: this feature has logical sense if you enabled 'Enable fixed pricing' and also installed fixed prices rules in the products for different currencies!"
+msgstr "Змусіть клієнтів платити на сторінці оплати за правилами, визначеними на вкладці \"Правила GeoIP\". УВАГА: ця функція має логічний сенс, якщо ви ввімкнули \"Увімкнути фіксовану ціну\", а також встановили правила фіксованих цін у продуктах для різних валют!"
+
+#: views/plugin_options.php:1504 views/plugin_options_2.php:2184
+msgid "Decimals"
+msgstr "Десятичні знаки"
+
+#: views/plugin_options.php:154 views/plugin_options_2.php:488
+msgid "special: each 15 minutes"
+msgstr "спеціальні: кожні 15 хвилин"
+
+#: views/plugin_options.php:155 views/plugin_options_2.php:487
+msgid "special: each 30 minutes"
+msgstr "спеціальні: кожні 30 хвилин"
+
+#: views/plugin_options.php:156 views/plugin_options_2.php:486
+msgid "special: each 45 minutes"
+msgstr "спеціальні: кожні 45 хвилин"
+
+#: views/plugin_options.php:153 views/plugin_options_2.php:489
+msgid "special: each 5 minutes"
+msgstr "спеціальні: кожні 5 хвилин"
+
+#: views/plugin_options.php:152 views/plugin_options_2.php:490
+msgid "special: each minute"
+msgstr "особливі: щохвилини"
+
+#: views/plugin_options.php:207 views/plugin_options_2.php:79
+msgid "Your version of WooCommerce plugin is too obsolete. Update minimum to %s version to avoid malfunctionality!"
+msgstr "Ваша версія плагіна WooCommerce занадто застаріла. Оновіть мінімум до версії %s, щоб уникнути несправності!"
+
+#: views/plugin_options.php:151 views/plugin_options_2.php:484
+msgid "monthly"
+msgstr "щомісячно"
+
+#: classes/woocs.php:5440
+msgid "(Approx. %s)"
+msgstr "(Приблизно %s)"
+
+#: views/plugin_options.php:171 views/plugin_options_2.php:524
+msgid "Custom price format"
+msgstr "Спеціальний формат ціни"
+
+#: views/plugin_options.php:149 views/plugin_options_2.php:482
+msgid "daily"
+msgstr "щодня"
+
+#: views/plugin_options.php:147 views/plugin_options_2.php:480
+msgid "hourly"
+msgstr "погодинної"
+
+#: views/plugin_options.php:146 views/plugin_options_2.php:479
+msgid "no auto update"
+msgstr "немає автоматичного оновлення"
+
+#. translators: Remove chip.
+#: views/fixed/product_coupon_data.php:17
+#: views/fixed/product_coupon_restriction_data.php:21
+#: views/fixed/product_price_data.php:24 views/fixed/product_price_data.php:54
+#: views/fixed/product_user_role_data.php:36 views/plugin_options_2.php:2259
+#: views/plugin_options_2.php:2260 js/active-filters-wrapper-frontend.js:3
+msgid "Remove"
+msgstr "Видалення"
+
+#: views/plugin_options.php:515
+msgid "Show approx. amount"
+msgstr "Показати приблизно сума"
+
+#: views/plugin_options.php:148 views/plugin_options_2.php:481
+msgid "twicedaily"
+msgstr "двічі на день"
+
+#: views/plugin_options.php:150 views/plugin_options_2.php:483
+msgid "weekly"
+msgstr "тижні"
+
+#. Plugin URI of the plugin
+#: index.php
+msgid "https://currency-switcher.com/"
+msgstr "https://currency-switcher.com/"
+
+#. Author URI of the plugin
+#: index.php
+msgid "https://pluginus.net/"
+msgstr "https://pluginus.net/"
+
+#. Author of the plugin
+#: index.php
+msgid "realmag777"
+msgstr "realmag777"
+
+#: views/woocs_order_metabox.php:47
+msgid "Recalculate order"
+msgstr "Перерахувати замовлення"
+
+#: views/woocs_order_metabox.php:31
+msgid "Base currency"
+msgstr "Базова валюта"
+
+#: views/woocs_order_metabox.php:41
+msgid "Change order currency"
+msgstr "Змінити валюту замовлення"
+
+#: views/widgets/selector_form.php:57
+msgid "code"
+msgstr "код"
+
+#: views/woocs_order_metabox.php:22
+msgid "Order currency"
+msgstr "Валюта замовлення"
+
+#: views/woocs_order_metabox.php:32
+msgid "Order currency rate"
+msgstr "Курс валюти замовлення"
+
+#: views/woocs_order_metabox.php:46
+msgid "cancel"
+msgstr "відмінити"
+
+#: views/woocs_order_metabox.php:30
+msgid "Currency in which the customer paid."
+msgstr "Валюта, в якій платив клієнт."
+
+#: views/woocs_order_metabox.php:32
+msgid "Currency rate when the customer paid"
+msgstr "Курс валюти, коли клієнт заплатив"
+
+#: views/widgets/selector_form.php:54
+msgid "Drop-down options text type"
+msgstr "Випадаючий параметр типу тексту"
+
+#: views/widgets/selector_form.php:48
+msgid "For ddslick script only!"
+msgstr "Лише для скрипта ddslick!"
+
+#: views/widgets/selector_form.php:40
+msgid "left"
+msgstr "залишити"
+
+#: views/woocs_order_metabox.php:30
+msgid "THIS order currency is changed manually %s!"
+msgstr "ЦЮ валюту замовлення змінюється вручну %s!"
+
+#: views/woocs_order_metabox.php:33
+msgid "Total amount"
+msgstr "Загальна кількість"
+
+#: views/widgets/selector_form.php:66
+msgid "Which text display in the drop-down options - currency code OR description text. Looks good for all dropdowns except ddslick."
+msgstr "Який текст відображатиметься у спадному меню - код валюти АБО текст опису. Виглядає добре для всіх випадаючих меню, крім ddslick."
+
+#: views/widgets/selector_form.php:30
+msgid "Show flags"
+msgstr "Показати прапори"
+
+#: views/widgets/selector_form.php:13
+msgid "Examples: 300px,100%,auto"
+msgstr "Приклади: 300 пікс., 100%, авто"
+
+#: classes/smart-designer.php:79 views/widgets/selector_form.php:36
+msgid "Flag position"
+msgstr "Позиція прапора"
+
+#: views/widgets/selector_form.php:39
+msgid "right"
+msgstr "право"
+
+#: views/widgets/converter_form.php:20 views/widgets/rates_form.php:20
+msgid "Count of digits after point"
+msgstr "Кількість цифр після крапки"
+
+#: views/widgets/converter_form.php:13 views/widgets/rates_form.php:13
+msgid "Examples: EUR,GBP,UAH"
+msgstr "Приклади: EUR, GBP, UAH"
+
+#: views/widgets/converter_form.php:18 views/widgets/rates_form.php:18
+msgid "Precision"
+msgstr "Точність"
+
+#: views/widgets/converter_form.php:11 views/widgets/rates_form.php:11
+msgid "Currencies excluding from view"
+msgstr "Валюти, виключаючи з поля зору"
+
+#: classes/smart-designer.php:67 views/widgets/selector_form.php:11
+msgid "Width"
+msgstr "ширина"
+
+#: views/shortcodes/woocs_converter.php:64
+msgid "results"
+msgstr "результати"
+
+#: views/shortcodes/woocs_rates.php:45
+msgid "1 %s is"
+msgstr "1 %s - це"
+
+#: views/shortcodes/woocs_converter.php:66
+msgid "Convert"
+msgstr "Конвертувати"
+
+#: views/plugin_options.php:1261 views/plugin_options_2.php:1978
+#: views/widgets/converter_form.php:5 views/widgets/rates_form.php:5
+#: views/widgets/selector_form.php:5
+msgid "Title"
+msgstr "назва"
+
+#: views/plugin_options.php:373 views/plugin_options.php:388
+#: views/plugin_options.php:1263 views/plugin_options.php:1579
+#: views/plugin_options_2.php:227 views/plugin_options_2.php:1980
+#: views/plugin_options_2.php:2113 views/plugin_options_2.php:2122
+#: views/shortcodes/woocs_rates.php:59 views/shortcodes/woocs_rates.php:67
+msgid "Flag"
+msgstr "Прапор"
+
+#: views/plugin_options.php:1193 views/plugin_options_2.php:1670
+#: views/shortcodes/woocs_converter.php:45
+msgid "to"
+msgstr "до"
+
+#: views/shortcodes/woocs_converter.php:25
+msgid "enter amount"
+msgstr "введіть суму"
+
+#: views/plugin_options.php:1579 views/plugin_options_2.php:2121
+msgid "Click to select the flag"
+msgstr "Клацніть, щоб вибрати прапор"
+
+#: views/plugin_options.php:1582
+msgid "drag and drop"
+msgstr "перетягнути"
+
+#: views/plugin_options.php:1582
+msgid "move"
+msgstr "рухатися"
+
+#: views/plugin_options.php:1567 views/plugin_options_2.php:2256
+#: views/widgets/selector_form.php:58
+msgid "description"
+msgstr "опис"
+
+#: views/plugin_options.php:1518
+msgid "exchange rate"
+msgstr "обмінний курс"
+
+#: views/plugin_options.php:1463
+msgid "Exmpl.: USD,EUR"
+msgstr "Приклад: USD, EUR"
+
+#: views/plugin_options.php:1423 views/plugin_options_2.php:2061
+msgid "full version of the plugin"
+msgstr "повна версія плагіна"
+
+#: views/plugin_options.php:1404 views/plugin_options_2.php:2037
+msgid "Hint"
+msgstr "натяк"
+
+#: views/plugin_options.php:1346 views/plugin_options_2.php:1885
+msgid "I cant add flags! What to do?"
+msgstr "Я не можу додати прапори! Що робити?"
+
+#: views/plugin_options.php:1519
+msgid "Press this button if you want get currency rate from the selected aggregator above!"
+msgstr "Натисніть цю кнопку, якщо хочете отримати курс валюти від обраного агрегатора вище!"
+
+#: views/plugin_options.php:1476 views/plugin_options_2.php:2139
+msgid "Select symbol position"
+msgstr "Виберіть положення символу"
+
+#: views/plugin_options.php:1458 views/plugin_options_2.php:2101
+msgid "Set etalon main currency. This should be the currency in which the price of goods exhibited!"
+msgstr "Встановіть еталон основної валюти. Це повинна бути валюта, в якій виставляється ціна товарів!"
+
+#: views/plugin_options.php:1427 views/plugin_options.php:1428
+#: views/plugin_options_2.php:2066
+msgid "WOOF - WooCommerce Products Filter"
+msgstr "WOOF - Фільтр продуктів WooCommerce"
+
+#: views/plugin_options.php:1322 views/plugin_options_2.php:1739
+msgid "FAQ"
+msgstr "FAQ"
+
+#: views/plugin_options.php:1020
+msgid "GeoIP works from v.2.3 of the WooCommerce plugin and no with minor versions of WooCommerce!!"
+msgstr "GeoIP працює з версії 2.3 плагіна WooCommerce, але не з незначними версіями WooCommerce !!"
+
+#: views/plugin_options.php:424 views/plugin_options_2.php:271
+msgid "Read wiki about Currency Active codes  <-  Get right currencies codes here if you are not sure about it!"
+msgstr "Прочитайте вікі про коди валют, що діють  <-  Отримайте правильні коди валют тут, якщо ви не впевнені в цьому!"
+
+#: views/plugin_options.php:222 views/plugin_options_2.php:89
+msgid "Currencies"
+msgstr "Валюти"
+
+#: views/plugin_options.php:60 views/plugin_options_data.php:54
+msgid "Transient"
+msgstr "Перехідний"
+
+#: views/plugin_options.php:162
+msgid "Add your money symbols in your shop. Example: $USD,AAA,AUD$,DDD - separated by commas"
+msgstr "Додайте символи грошей у свій магазин. Приклад: $ USD, AAA, AUD $, DDD - розділені комами"
+
+#: views/plugin_options.php:89 views/plugin_options_2.php:379
+msgid "Currency aggregator"
+msgstr "Агрегатор валют"
+
+#: views/plugin_options.php:109 views/plugin_options_2.php:419
+msgid "Currency storage"
+msgstr "Зберігання валюти"
+
+#: views/plugin_options.php:161
+msgid "Custom money signs"
+msgstr "Спеціальні грошові знаки"
+
+#: views/plugin_options.php:607
+msgid "Customer will pay with selected currency (Yes) or with default currency (No)."
+msgstr "Клієнт сплачує з обраною валютою (Так) або з валютою за замовчуванням (Ні)."
+
+#: views/plugin_options.php:493 views/plugin_options_2.php:650
+msgid "Hide switcher on checkout page"
+msgstr "Сховати перемикач на сторінці оформлення замовлення"
+
+#: views/plugin_options.php:494
+msgid "Hide switcher on checkout page for any of your reason. Better restrike for users change currency on checkout page in multiple mode."
+msgstr "Приховати перемикач на сторінці оформлення замовлення з будь-якої вашої причини. Кращий рестрикт для користувачів змінює валюту на сторінці оформлення замовлення в декількох режимах."
+
+#: views/plugin_options.php:539 views/plugin_options_2.php:706
+msgid "I am using cache plugin on my site"
+msgstr "Я використовую плагін кешу на своєму сайті"
+
+#: views/plugin_options.php:606 views/plugin_options.php:617
+#: views/plugin_options_2.php:811 views/plugin_options_2.php:822
+msgid "Is multiple allowed"
+msgstr "Допускається багаторазове використання"
+
+#: views/plugin_options.php:228 views/plugin_options_2.php:95
+msgid "Options"
+msgstr "опції"
+
+#: views/plugin_options.php:181 views/plugin_options_2.php:542
+msgid "Prices without cents"
+msgstr "Ціни без центів"
+
+#: views/plugin_options.php:139 views/plugin_options_2.php:473
+msgid "Rate auto update"
+msgstr "Оцініть автоматичне оновлення"
+
+#: views/plugin_options.php:182
+msgid "Recount prices without cents everywhere like in JPY and TWD which by its nature have not cents. Use comma. Example: UAH,RUB. Test it for checkout after setup!"
+msgstr "Перераховуйте ціни без центів скрізь, як у JPY та TWD, які за своєю природою не мають центів. Використовуйте кому. Приклад: грн., Руб. Перевірте його на замовлення після налаштування!"
+
+#: views/plugin_options.php:172 views/plugin_options_2.php:534
+msgid "Set your format how to display price on front. Use keys: __CODE__,__PRICE__. Leave it empty to use default format. Example: __PRICE__ (__CODE__)"
+msgstr "Встановіть формат, як відображати ціну спереду. Використовуйте клавіші: __КОД __, __ ЦІНА__. Залиште поле порожнім, щоб використовувати формат за замовчуванням. Приклад: __PRICE__ (__CODE__)"
+
+#: views/plugin_options.php:540 views/plugin_options_2.php:716
+msgid "Set Yes here ONLY if you are REALLY use cache plugin for your site, for example like Super cache or Hiper cache (doesn matter). + Set \"Custom price format\", for example: __PRICE__ (__CODE__). After enabling this feature - clean your cache to make it works. It will allow show prices in selected currency on all pages of site. Fee for this feature - additional AJAX queries for products prices redrawing."
+msgstr "Встановіть тут ТІЛЬКИ, якщо ви ДЕЙСТВОРИВО використовуєте плагін кешу для свого сайту, наприклад, як Супер кеш чи Hiper кеш (не має значення). + Встановити \\ \"Спеціальний формат ціни \", наприклад: __PRICE__ (__CODE__). Після ввімкнення цієї функції - очистіть кеш, щоб він запрацював. Це дозволить відображати ціни у вибраній валюті на всіх сторінках сайту. Плата за цю функцію - додаткові запити AJAX щодо перегляду цін на товари."
+
+#: views/plugin_options.php:472 views/plugin_options_2.php:624
+msgid "Show info icon near the price of the product which while its under hover shows prices of products in all currencies"
+msgstr "Показувати піктограму інформації поруч із ціною товару, яка під час наведення курсору показує ціни на товари у всіх валютах"
+
+#: views/plugin_options.php:460
+msgid "Show money signs"
+msgstr "Показувати грошові знаки"
+
+#: views/plugin_options.php:471 views/plugin_options_2.php:614
+msgid "Show price info icon"
+msgstr "Показати піктограму інформації про ціну"
+
+#: views/plugin_options.php:461
+msgid "Show/hide money signs on the front drop-down"
+msgstr "Показуйте / приховуйте грошові знаки на випадаючому списку"
+
+#: views/plugin_options.php:79 views/plugin_options_2.php:361
+msgid "Welcome currency"
+msgstr "Вітальна валюта"
+
+#: views/plugin_options.php:198
+msgid "WooCommerce Currency Switcher v.%s"
+msgstr "WooCommerce Currency Switcher v.%s"
+
+#: views/plugin_options.php:613 views/plugin_options.php:713
+#: views/plugin_options_2.php:818 views/plugin_options_2.php:997
+msgid "Yes"
+msgstr "Так"
+
+#: classes/woocs.php:1396 classes/woocs.php:1623 views/plugin_options.php:365
+#: views/plugin_options.php:380 views/plugin_options_2.php:228
+#: views/plugin_options_2.php:1651 views/plugin_options_2.php:2126
+#: views/shortcodes/woocs_rates.php:60 views/shortcodes/woocs_rates.php:68
+msgid "Currency"
+msgstr "Валюта"
+
+#: classes/woocs.php:2392
+msgid "Current currency is:"
+msgstr "Поточна валюта:"
+
+#: views/plugin_options.php:612 views/plugin_options.php:712
+#: views/plugin_options_2.php:817 views/plugin_options_2.php:996
+msgid "No"
+msgstr "Немає"
+
+#: classes/woocs.php:2727 classes/woocs.php:2751 classes/woocs.php:2788
+#: classes/woocs.php:2801 classes/woocs.php:2807 classes/woocs.php:2833
+#: classes/woocs.php:2867 classes/woocs.php:2883 classes/woocs.php:2903
+#: classes/woocs.php:2918 classes/woocs.php:2924 classes/woocs.php:2943
+#: classes/woocs.php:2960 classes/woocs.php:2995 classes/woocs.php:3012
+#: classes/woocs.php:3018 classes/woocs.php:3051 classes/woocs.php:3064
+#: classes/woocs.php:3070 classes/woocs.php:3097 classes/woocs.php:3103
+#: classes/woocs.php:3130 classes/woocs.php:3156 classes/woocs.php:3182
+#: classes/woocs.php:3200 classes/woocs.php:3204 classes/woocs.php:3223
+#: classes/woocs.php:3238 classes/woocs.php:3253 classes/woocs.php:3270
+#: classes/woocs.php:3275 classes/woocs.php:3301 classes/woocs.php:3312
+#: classes/woocs.php:3333
+msgid "no data for %s"
+msgstr "даних для %s немає"
+
+#: views/plugin_options.php:440 views/plugin_options_2.php:560
+msgid "Show flags by default"
+msgstr "Показувати прапори за замовчуванням"
+
+#: views/plugin_options.php:441
+msgid "Show/hide flags on the front drop-down"
+msgstr "Показувати / приховувати прапори на випадаючому списку"
+
+#: classes/woocs.php:3534
+msgid "Total in basic currency: "
+msgstr "Загальна сума в основній валюті: "
+
+#: classes/woocs.php:1360
+msgid "loading"
+msgstr "погрузка"
+
+#: classes/woocs.php:1051
+msgid "Documentation"
+msgstr "документація"
+
+#: classes/widgets/widget-currency-converter.php:9
+#: classes/widgets/widget-currency-converter.php:38
+msgid "WooCommerce Currency Converter"
+msgstr "Конвертер валют WooCommerce"
+
+#: classes/widgets/widget-currency-converter.php:11
+msgid "WooCommerce Currency Converter by realmag777"
+msgstr "Конвертер валют WooCommerce від realmag777"
+
+#: classes/widgets/widget-currency-rates.php:9
+#: classes/widgets/widget-currency-rates.php:38
+msgid "WooCommerce Currency Rates"
+msgstr "Курси валют WooCommerce"
+
+#: classes/woocs.php:1050
+msgid "Settings"
+msgstr "настройки"
+
+#: classes/widgets/widget-currency-rates.php:11
+msgid "WooCommerce Currency Rates by realmag777"
+msgstr "Курси валют WooCommerce by realmag777"

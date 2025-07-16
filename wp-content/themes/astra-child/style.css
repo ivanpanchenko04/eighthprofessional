@@ -1,0 +1,957 @@
+/*
+Theme Name: Astra Child
+Template: astra
+*/
+
+@font-face {
+  font-family: "Annabelle";
+  src: url("fonts/Annabelle\ Cyr.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aston";
+  src: url("fonts/Aston\ Script.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.woocommerce-loop-product__title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.woocommerce-loop-product__title a:hover {
+  text-decoration: none !important;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Boldonse&family=Copse&display=swap");
+.copse-regular {
+  font-family: "Copse", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ============================================ ВИПРАВЛЕННЯ ВСЯКОЇ ШЛЯПИ ============================================ */
+
+.mrfz_copy a {
+  color: #e8e1d682 !important;
+}
+
+.elementor a {
+  text-decoration: none !important;
+}
+a {
+  text-decoration: none !important;
+}
+
+button {
+  border-radius: 0;
+}
+
+.woocommerce-js form .form-row textarea,
+.woocommerce-js input[type="email"],
+.woocommerce-js input[type="number"],
+.woocommerce-js input[type="password"],
+.woocommerce-js input[type="reset"],
+.woocommerce-js input[type="search"],
+.woocommerce-js input[type="tel"],
+.woocommerce-js input[type="text"],
+.woocommerce-js input[type="url"],
+.woocommerce-js textarea,
+.woocommerce-page form .form-row textarea,
+.woocommerce-page input[type="email"],
+.woocommerce-page input[type="number"],
+.woocommerce-page input[type="password"],
+.woocommerce-page input[type="reset"],
+.woocommerce-page input[type="search"],
+.woocommerce-page input[type="tel"],
+.woocommerce-page input[type="text"],
+.woocommerce-page input[type="url"],
+.woocommerce-page textarea {
+  border: none;
+  padding: 14px;
+  background: #f5f5f5;
+  font-size: 13px;
+  color: #333;
+}
+
+/* ============================================ ВИПРАВЛЕННЯ ВСЯКОЇ ШЛЯПИ ============================================ */
+
+/* ====================== сайдбар категорії ======================*/
+
+/* Загальний стиль списку категорій */
+.widget_product_categories ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Елементи списку */
+.widget_product_categories li {
+  margin-bottom: 8px;
+}
+
+/* Посилання на категорії */
+.widget_product_categories li a {
+  display: block;
+  color: #4b2e2b;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Hover */
+.widget_product_categories li a:hover {
+  background-color: #e5ded3;
+  color: #5c1a1b;
+}
+
+/* Активна категорія */
+.widget_product_categories .current-cat > a,
+.widget_product_categories .current-cat-parent > a {
+  background-color: #cba135;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Батьківські категорії */
+.widget_product_categories .cat-parent > a {
+  font-weight: 600;
+}
+
+/* Вкладені (підкатегорії) */
+.widget_product_categories .children {
+  margin-left: 16px;
+  border-left: 2px solid #e5ded3;
+  padding-left: 10px;
+}
+
+/* очистити фільтри */
+
+.clear-filters-btn {
+  display: block;
+  width: max-content;
+  margin: 12px auto 0 auto;
+  background-color: #5c1a1b;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.clear-filters-btn:hover {
+  background-color: #4b2e2b;
+}
+/* очистити фільтри */
+
+/* прибираємо зайве */
+.ast-left-sidebar .main-content-wrap {
+  border-right: none !important;
+}
+
+.ast-left-sidebar #secondary {
+  padding-right: 0 !important;
+  border-right: none !important;
+}
+
+.woocommerce-result-count {
+  display: none;
+}
+.woocommerce-ordering {
+  display: none;
+}
+/* прибираємо зайве */
+
+/* ====================== сайдбар категорії (end) ====================== */
+
+/* ====================== стилізування карточки товару ====================== */
+/* відсоток знижки */
+.custom-sale-badge,
+.custom-new-badge {
+  background-color: #ffffff;
+  color: #70012b;
+  font-family: "Inter", serif;
+  font-weight: 500;
+  padding: 4px 10px;
+
+  font-size: 12px;
+
+  z-index: 10;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-new-badge {
+  background-color: #70012b;
+  color: #ffffff;
+  max-width: 33px;
+}
+
+.badges-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* прибрати напис "розпродаж" */
+.woocommerce span.ast-onsale-card {
+  display: none !important;
+}
+
+/* Обгортка картки */
+.custom-product-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  text-align: center;
+  align-items: center;
+}
+
+/* === клікабельна карточка + показ короткого опису при наведені + стилі заголовку і т.д === */
+
+/* Весь верхній блок тепер клікабельний */
+.custom-product-top a {
+  display: block;
+  text-decoration: none;
+}
+
+/* Стилі для категорії товару ====непрацює*/
+.product-category {
+  display: none;
+}
+
+/* Стилі для заголовка товару */
+.woocommerce-loop-product__title a {
+  color: #560121;
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+}
+
+.woocommerce-products-header {
+  font-family: "Annabelle", cursive;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.term-description {
+  font-family: "Mulish", sans-serif;
+}
+
+.woocommerce-products-header .page-title {
+  color: #570122;
+  margin-bottom: 10px;
+}
+/* розбивка на блоки карточки товару */
+
+/*
+.ast-grid-common-col {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .astra-shop-summary-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    height: 100%;
+  }
+  
+  .astra-shop-summary-wrap .button {
+    margin-top: auto;
+    align-self: flex-start;
+*/
+
+/* додати до списку бажань */
+.custom-product-card {
+  position: relative;
+}
+
+.wishlist-btn {
+  position: absolute;
+
+  right: 36px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.custom-product-card:hover .wishlist-btn {
+  opacity: 1;
+}
+
+.wishlist-btn .tinvwl_add_to_wishlist_button {
+  background: none;
+  border: none;
+  color: #661834;
+  cursor: pointer;
+  margin: 0 !important;
+}
+
+.wishlist-btn .tinvwl_add_to_wishlist_button:hover {
+  color: #c1a57c;
+}
+
+.tinvwl_add_to_wishlist_button.tinvwl-icon-heart::before {
+  font-size: 48px !important;
+}
+
+@keyframes flyToCart {
+  0% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5) translateY(-100px);
+    opacity: 0;
+  }
+}
+
+.add-to-cart-animate {
+  animation: flyToCart 0.6s ease-in-out forwards;
+}
+
+.custom-buy-button.clicked {
+  transform: scale(1.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 0 10px rgba(193, 165, 124, 0.6);
+}
+
+/* попап додавання до кошику */
+.add-to-cart-popup {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #163b2f;
+  color: #e2d6ca;
+  padding: 16px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  display: block !important;
+}
+
+.add-to-cart-popup.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* смарт хедер */
+.smart-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: transform 0.3s ease;
+  background-color: #fafafaac;
+}
+
+.smart-header.hide-header {
+  transform: translateY(-100%);
+}
+
+.smart-header.scrolled {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.site-content {
+  margin-top: 110px;
+}
+
+/* повідомлення про додавання товару в кошик */
+.woocommerce-message {
+  font-family: "Copse", serif;
+  border-top-color: #c2a67d;
+}
+
+/* галочка */
+.woocommerce-message::before {
+  color: #173c30;
+}
+
+/* кнопка */
+.woocommerce-message .button.wc-forward {
+  background-color: #560121 !important;
+  color: #e2d7cb !important;
+}
+
+/* стилі пагінації */
+.page-numbers {
+  font-family: "Copse", serif;
+}
+
+.page-numbers li {
+  border: none !important;
+  border-radius: 10px;
+  background-color: #c2a67d;
+}
+
+.page-numbers li:hover a {
+  background-color: #661835 !important;
+  color: #e2d7cb !important;
+}
+.page-numbers a {
+  color: #570122 !important;
+}
+/* активна сторінка */
+.page-numbers.current {
+  background-color: #570122 !important;
+  color: #e2d7cb;
+}
+
+.custom-lang-dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: "Inter", serif;
+}
+
+.lang-btn {
+  background-color: #ebebeb;
+
+  color: #570122;
+  padding: 12px 22px 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lang-btn img {
+  width: 18px;
+  height: 12px;
+}
+
+.lang-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ebebeb;
+
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 100%;
+}
+
+.lang-dropdown-content a {
+  color: #560121;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lang-dropdown-content:hover {
+  background-color: #c7c4c4;
+}
+
+.custom-lang-dropdown:hover .lang-dropdown-content {
+  display: block;
+}
+
+/* іконка пошуку */
+
+.fa-search::before {
+  display: none;
+}
+
+.fa-search {
+  background-image: url("/wp-content/uploads/2025/05/search_icon.svg"); /* або .png */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+}
+
+/* слайдер на головній сторінці */
+
+.custom-product-slider-wrapper {
+  position: relative;
+}
+
+.custom-slider-prev,
+.custom-slider-next {
+  position: absolute;
+  top: 25%;
+  transform: translateY(-50%);
+  background: #fafafa;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  color: #333;
+  transition: background 0.3s;
+}
+
+@media screen and (min-width: 1920px) {
+  .custom-slider-prev,
+  .custom-slider-next {
+    top: 50%;
+  }
+}
+
+.custom-slider-prev:hover,
+.custom-slider-next:hover {
+  background: #eee;
+}
+
+.custom-slider-prev {
+  left: -80px;
+}
+
+.custom-slider-next {
+  right: -80px;
+}
+
+/* Для правильного відображення товарів */
+.swiper-slide .product {
+  height: 100%;
+}
+
+/* ще карточка товару */
+
+.custom-product-card {
+  padding: 0;
+  width: auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.woocommerce-loop-product__title {
+  font-size: 19px;
+  margin-top: 17px !important;
+  margin-bottom: 14px !important;
+  color: #570122;
+}
+.woocommerce-loop-product__title a {
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.product-rating {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+}
+
+/*custom star rating*/
+.woocommerce-js .star-rating {
+  width: 7em;
+}
+
+.star-rating {
+  display: inline-block;
+  position: relative;
+  width: calc((12px + 9px) * 5);
+  height: 12px;
+  background-image: url("/img/star-empty.svg");
+  background-repeat: repeat-x;
+  background-size: calc(12px + 9px) 12px;
+  background-position: left top;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.star-rating span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12px;
+  background-image: url("/img/star-empty.svg");
+  background-repeat: repeat-x;
+  background-size: calc(12px + 9px) 12px;
+  background-position: left top;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.star-rating::before {
+  content: none !important;
+}
+
+.star-rating,
+.star-rating span {
+  background-position: 0 0;
+  background-size: calc(12px + 9px) 12px;
+}
+
+.review-count {
+  display: block;
+  font-family: "inter", serif;
+  font-weight: 200;
+  font-size: 12px;
+  color: #bcbcbc;
+  margin: 0;
+}
+
+.product-price {
+  font-family: "inter", serif;
+  font-size: 12px;
+  margin: 6px 0 17px;
+}
+
+.product-price del {
+  color: #999;
+  margin-right: 6px;
+}
+
+.product-price ins {
+  color: #570122;
+  text-decoration: none;
+  font-family: "inter", serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.custom-buy-button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #570122;
+  color: #fff;
+  padding: 10px;
+  font-family: "inter", serif;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.custom-product-bottom {
+  width: 100%;
+}
+
+.custom-buy-button:hover {
+  background-color: #45011b;
+  color: #fff;
+}
+
+.swiper-slide .custom-product-card {
+  height: 690px;
+}
+
+/*Currency switcher*/
+.currency-switcher {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  background-color: #ebebeb;
+  color: #3c3c3b;
+  border-radius: 4%;
+  font-family: "Inter";
+  font-size: 10px;
+}
+
+.dropdown-toggle {
+  padding: 5px 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.flag {
+  width: 20px;
+  height: 20px;
+}
+
+.arrow-icon {
+  width: 12px;
+  height: 16px;
+  margin-bottom: 3px;
+}
+
+.currency-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  list-style: none;
+  margin: 5px 0 0;
+  padding: 0;
+  width: 100%;
+}
+
+.currency-menu li {
+  padding: 6px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.currency-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+/*Footer email input*/
+.footer-input-container {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+}
+
+.footer-input-container input {
+  background-color: #ebebeb !important;
+  border: 1px solid #a1a1a1 !important;
+  height: 44px;
+  padding: 12px 21px;
+  flex: 1;
+  font-size: 14px;
+}
+
+.footer-input-button {
+  padding: 14px 18px;
+  height: 44px;
+  font-family: "Inter";
+  font-weight: 400;
+}
+
+/*---------Notes slider----------*/
+
+/*Dots*/
+.fas.fa-circle {
+  font-size: 8px;
+  transition: font-size 0.3s ease;
+}
+
+.slick-active .fas.fa-circle {
+  font-size: 10px;
+}
+
+ul.slick-dots li {
+  margin: 0;
+}
+
+/*Container*/
+.premium-carousel-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.premium-carousel-inner {
+  max-width: 70%;
+}
+
+/*Arrows*/
+.elementor-15
+  .elementor-element.elementor-element-86ffdfd
+  a.carousel-arrow.carousel-prev {
+  top: 75px;
+  left: -60px;
+}
+
+.elementor-15
+  .elementor-element.elementor-element-86ffdfd
+  a.carousel-arrow.carousel-next {
+  top: 75px;
+  right: -60px;
+}
+
+/*Background image*/
+.elementor-15
+  .elementor-element.elementor-element-fbd52d5:not(
+    .elementor-motion-effects-element-type-background
+  ),
+.elementor-15
+  .elementor-element.elementor-element-fbd52d5
+  > .elementor-motion-effects-container
+  > .elementor-motion-effects-layer {
+  background-image: url(http://eighthprofessional/wp-content/uploads/2025/05/bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*--------------END-----------------*/
+
+/*Footer*/
+.footer-nav-container {
+  max-width: 250px;
+}
+
+.footer-left-container {
+  max-width: 420px;
+}
+
+/*Search input*/
+.hfe-search-button-wrapper {
+  position: relative;
+  display: inline-block;
+  width: auto;
+}
+
+.hfe-search-form__input {
+  width: 0;
+  opacity: 0;
+  border: none;
+  border-bottom: 2px solid #000;
+  font-size: 16px;
+  padding: 5px 10px;
+  transition: width 0.4s ease, opacity 0.4s ease;
+  pointer-events: none;
+  color: #000;
+}
+
+.hfe-search-icon-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hfe-search-icon-toggle i {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.hfe-search-button-wrapper.active .hfe-search-form__input {
+  width: 200px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.elementor-widget-hfe-search-button .hfe-search-form__input {
+  background-color: #fafafa !important;
+}
+
+/*Wishlist button*/
+.tinvwl_add_to_wishlist_button {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.tinvwl_add_to_wishlist_button::before {
+  content: "" !important;
+  position: absolute;
+  top: 20px !important;
+  left: 25px !important;
+  width: 20px;
+  height: 20px;
+  background-image: url("/img/heart.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tinvwl_add_to_wishlist_button.tinvwl-product-in-list::before {
+  background-image: url("/img/heart-filled.svg");
+}
+
+/*=========PARTNERS PAGE===========*/
+.attachment-full.size-full.wp-image-1165 {
+  width: 20px !important;
+  height: 18px !important;
+}
+
+/*Contact form*/
+.custom-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 669px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.custom-form input::placeholder,
+.custom-form textarea::placeholder {
+  color: #686868;
+}
+
+.custom-form button {
+  background-color: #570122;
+  color: white;
+  padding: 14px;
+  font-size: 13px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.custom-form button:hover {
+  background-color: #6a0033;
+}
+
+.custom-form .form-group {
+  position: relative;
+}
+
+.custom-form .form-group input,
+.custom-form .form-group textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 13px;
+  background: #F5F5F5;
+}
+
+.custom-form .form-group label {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #686868;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.custom-form .form-group-textarea label {
+  top: 24px;
+}
+
+.small-textarea-text {
+  font-size: 10px;
+}
+
+.custom-form .form-group input:focus + label,
+.custom-form .form-group input:not(:placeholder-shown) + label,
+.custom-form .form-group textarea:focus + label,
+.custom-form .form-group textarea:not(:placeholder-shown) + label {
+  opacity: 0;
+}
+
+.custom-form .required-star {
+  color: #570122;
+}
+
+
