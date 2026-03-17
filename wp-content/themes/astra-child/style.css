@@ -101,7 +101,9 @@ button {
   text-decoration: none;
   padding: 6px 10px;
   border-radius: 8px;
-  transition: background 0.3s, color 0.3s;
+  transition:
+    background 0.3s,
+    color 0.3s;
 }
 
 /* Hover */
@@ -325,7 +327,9 @@ button {
 
 .custom-buy-button.clicked {
   transform: scale(1.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   box-shadow: 0 0 10px rgba(193, 165, 124, 0.6);
 }
 
@@ -824,7 +828,9 @@ ul.slick-dots li {
   border-bottom: 2px solid #000;
   font-size: 16px;
   padding: 5px 10px;
-  transition: width 0.4s ease, opacity 0.4s ease;
+  transition:
+    width 0.4s ease,
+    opacity 0.4s ease;
   pointer-events: none;
   color: #000;
 }
@@ -921,7 +927,7 @@ ul.slick-dots li {
   width: 100%;
   padding: 14px;
   font-size: 13px;
-  background: #F5F5F5;
+  background: #f5f5f5;
 }
 
 .custom-form .form-group label {
@@ -954,4 +960,816 @@ ul.slick-dots li {
   color: #570122;
 }
 
+/*=======Product card=======*/
 
+.woocommerce ul.products:not(.elementor-grid),
+.woocommerce-page ul.products:not(.elementor-grid) {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-product-card {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.product-left {
+  flex: 0 0 450px; /* Задайте ширину, яка відповідає вашому дизайну (наприклад, 450px) */
+  max-width: 50%; /* Але не більше половини картки */
+}
+
+.product-left img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain; /* Зберігає пропорції без обрізання */
+  border-radius: 0; /* На макеті фото без закруглень */
+}
+
+.product-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-product-card .woocommerce-loop-product__title {
+  font-size: 35px !important;
+  font-weight: 400 !important;
+  margin-bottom: 15px !important;
+  margin-top: 0 !important;
+}
+
+.product-rating {
+  align-items: flex-start;
+  margin-bottom: 19px;
+}
+
+.rating-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.custom-star-rating {
+  display: flex;
+  gap: 4px; /* Відступ між самими зірочками */
+  flex-shrink: 0; /* Забороняємо браузеру стискати блок із зірками */
+  padding-right: 2px; /* Мінімальний запас, щоб край не обрізався */
+}
+
+.custom-star-rating img.star {
+  width: 18px; /* Чітко задаємо розмір зірки */
+  height: auto;
+  display: block;
+}
+
+.review-count {
+  font-size: 14px;
+  color: #a0a0a0;
+  white-space: nowrap; /* Щоб напис "5 відгуків" не переносився */
+}
+
+.product-price-row {
+  margin-bottom: 25px;
+}
+
+.product-price ins {
+  font-size: 20px;
+}
+
+.product-volume {
+  font-size: 14px;
+}
+
+.product-long-description {
+  color: #343b42;
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.custom-product-bottom-action {
+  display: flex;
+  flex-direction: row;
+}
+
+.quantity-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 107px; /* Фіксована ширина за вашим запитом */
+  height: 45px; /* Висота для зручного натискання */
+  border: 1.25px solid #570122; /* Колір рамки */
+  box-sizing: border-box;
+}
+
+.quantity-wrapper button {
+  background: none !important; /* Прибираємо фон */
+  border: none !important; /* Прибираємо рамки кнопок */
+  box-shadow: none !important; /* Прибираємо тіні */
+  color: #570122; /* Колір символів +/- */
+  width: 30px;
+  height: 100%;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0;
+  transition: none !important; /* Вимикаємо анімацію ховера */
+}
+
+/* Прибираємо ефекти при наведенні та фокусі */
+.quantity-wrapper button:hover,
+.quantity-wrapper button:focus,
+.quantity-wrapper button:active {
+  background: none !important;
+  color: #570122 !important;
+  outline: none !important;
+}
+
+.quantity-wrapper input.qty {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  width: 40px;
+  height: 100%;
+  text-align: center;
+  color: #570122;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  -moz-appearance: textfield; /* Прибираємо стрілки в Firefox */
+}
+
+/* Прибираємо стрілки Chrome/Safari */
+.quantity-wrapper input::-webkit-outer-spin-button,
+.quantity-wrapper input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantity-wrapper input:focus {
+  outline: none !important;
+}
+
+.quantity-wrapper button.minus {
+  transition: color 0.3s ease;
+}
+
+/* Якщо колір сірий, міняємо курсор на звичайний */
+.quantity-wrapper button.minus[style*="color: rgb(204, 204, 204)"] {
+  cursor: default;
+}
+
+.custom-buy-button {
+  max-width: 369px;
+  margin-left: 12px;
+}
+
+/*=======Налаштування Woocommerce=========*/
+
+/* Колір для посилань та поточного тексту */
+.woocommerce-breadcrumb {
+  display: none !important;
+}
+
+.woocommerce-breadcrumb-custom {
+  margin-bottom: 40px;
+}
+
+.woocommerce-breadcrumb-custom,
+.woocommerce-breadcrumb-custom a {
+  color: #570122 !important;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Inter";
+  display: flex;
+  align-items: center;
+}
+
+/* Додаємо вашу стрілку між елементами */
+.woocommerce-breadcrumb-custom a::after {
+  content: "" !important;
+  display: inline-block !important;
+  width: 10px !important; /* Налаштуйте під вашу картинку */
+  height: 10px !important;
+  margin: 0 7px !important;
+  background-image: url("/wp-content/uploads/your-arrow-icon.png"); /* Шлях до вашої стрілки */
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  vertical-align: middle !important;
+}
+
+/* Прибираємо стрілку після останнього елемента (назви підкатегорії) */
+.woocommerce-breadcrumb-custom span:last-child::after,
+.woocommerce-breadcrumb-custom last-child::after {
+  display: none !important;
+}
+
+.woocommerce-products-header {
+  display: none !important;
+}
+
+/*=========== Стилі саме для карток у слайдері =============*/
+
+.custom-product-slider .custom-product-card {
+  display: flex;
+  flex-direction: column; /* Вертикальна орієнтація */
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+/* Налаштування фото для слайдера */
+.custom-product-slider .custom-product-top img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+}
+
+/* Налаштування заголовка для слайдера (менший, ніж 35px) */
+.custom-product-slider .woocommerce-loop-product__title {
+  font-size: 19px !important;
+  line-height: 1.3;
+  margin-bottom: 0;
+}
+
+/* Прибираємо двоколонність, яку ми задавали раніше для категорії */
+.custom-product-slider .product-left,
+.custom-product-slider .product-right {
+  flex: none;
+  width: 100%;
+}
+
+.custom-product-slider .product-rating {
+  align-items: flex-start;
+  margin-bottom: 0;
+  text-align: center;
+  align-items: center;
+}
+
+.custom-product-slider .review-count {
+  font-size: 14px;
+  color: #a0a0a0;
+  white-space: nowrap;
+  text-align: center;
+  align-items: center;
+}
+
+.custom-product-slider .product-price-row {
+  margin-bottom: 0;
+}
+
+.custom-product-slider .product-price ins {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Inter";
+}
+
+/*КАСТОМНИЙ КОШИК*/
+
+.eighth-cart-grid {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.eighth-cart-items {
+  flex: 2;
+}
+.eighth-cart-sidebar {
+  flex: 1.2;
+  background: #fcfcfc;
+  padding: 30px;
+}
+
+/* Картка товару */
+.eighth-cart-item {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.eighth-item-image img {
+  width: 187px;
+  height: 187px;
+  object-fit: cover;
+}
+.eighth-item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.eighth-product-title {
+  font-family: serif;
+  font-size: 20px;
+  color: #4a041a;
+  margin: 0;
+}
+.eighth-product-meta {
+  color: #888;
+  font-size: 13px;
+}
+
+.eighth-item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Кнопки кількості */
+.eighth-quantity-wrapper .quantity input {
+  border: 1px solid #d1b4b9;
+  padding: 5px;
+  width: 60px;
+  text-align: center;
+}
+
+/* Ціна та Видалення */
+.eighth-price-remove {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.eighth-item-price {
+  font-weight: bold;
+  font-size: 18px;
+}
+.eighth-remove-item {
+  color: #ccc;
+  transition: color 0.3s;
+}
+.eighth-remove-item:hover {
+  color: #4a041a;
+}
+
+/* Підсумки */
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.main-total {
+  font-weight: bold;
+  border-top: 1px solid #eee;
+  pt: 10px;
+  margin-top: 15px;
+}
+
+/* Кнопки */
+.eighth-btn-checkout {
+  display: block;
+  background: #4a041a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.eighth-btn-continue {
+  display: block;
+  background: #eee;
+  color: #333;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+/* Основна сітка */
+.custom-cart-grid {
+  display: flex;
+  gap: 40px;
+}
+.custom-cart-items-list {
+  flex: 2;
+}
+.custom-cart-sidebar {
+  flex: 1.2;
+  background: #f9f9f9;
+}
+
+/* Картка товару */
+.custom-cart-item {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.cart-item-photo img {
+  width: 187px;
+  height: 187px;
+}
+h2.cart-item-title {
+  font-family: "Playfair Display";
+  font-size: 20px;
+  margin-bottom: 9px;
+}
+.cart-item-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.ast-woo-product-category::after {
+  content: " / ";
+  margin: 0 5px;
+}
+.product-volume {
+  display: inline-block;
+}
+
+/* Примусове відображення категорії */
+.ast-woo-product-category,
+.product-volume {
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: #343b42 !important; /* переконайтеся, що колір не білий на білому */
+  font-size: 11px !important;
+  font-family: "Inter";
+}
+
+/* Прибираємо будь-які роздільники після категорії */
+.ast-woo-product-category::after,
+.ast-woo-product-category::before,
+.product-category-row::after,
+.product-category-row::before {
+  content: "" !important;
+  display: none !important;
+}
+
+/* Прибираємо роздільники біля ціни, якщо вони там є */
+.product-price::after,
+.product-price::before {
+  content: "" !important;
+  display: none !important;
+}
+
+/* Гарантуємо, що кожен елемент — це окремий рядок */
+.ast-woo-product-category,
+.product-volume {
+  display: block !important;
+}
+
+/* Перевірка контейнера */
+.product-category {
+  display: block !important;
+  height: auto !important;
+  overflow: visible !important;
+}
+
+/* Нижня частина товару (кількість + ціна) */
+.item-info-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.item-price-delete {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+
+.product-price {
+  margin: 0;
+}
+
+/* Кількість */
+.quantity-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d1b4b9;
+}
+.quantity-wrapper input {
+  text-align: center;
+  border: none;
+}
+.quantity-wrapper button {
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.product-price {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.remove-item-link {
+  display: inline-block;
+  width: 11px;
+  height: 14px;
+  background-image: url("http://eighthprofessional/wp-content/uploads/2026/02/delete-icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: opacity 0.3s ease;
+}
+
+.remove-item-link:hover {
+  opacity: 0.7; /* Ефект при наведенні */
+}
+
+/* Сайдбар блоки */
+.sidebar-block {
+  margin-bottom: 30px;
+  padding: 0 18px 0 18px;
+}
+.sidebar-block h3 {
+  font-size: 20px;
+  margin-bottom: 22px;
+  font-family: "Playfair Display";
+}
+.total-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.grand-total {
+  font-weight: bold;
+  font-size: 18px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.custom-coupon-form input {
+  height: 30px;
+  border: 1px solid #570122;
+  background-color: #e4e1e1;
+}
+
+.custom-coupon-form input::placeholder {
+  color: #570122;
+}
+
+.price-info {
+  padding: 0 18px 0 18px;
+}
+
+/* СТОРІНКА ОФОРМЛЕННЯ */
+
+/* Контейнер сторінки */
+.custom-checkout-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.checkout-main-title {
+  font-family: serif;
+  color: #4a041a;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 40px 0 20px;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 20px;
+}
+
+/* Поля вводу */
+.custom-checkout-wrapper .form-row {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.custom-checkout-wrapper input[type="text"],
+.custom-checkout-wrapper input[type="tel"],
+.custom-checkout-wrapper input[type="email"],
+.custom-checkout-wrapper textarea,
+.custom-checkout-wrapper select,
+.custom-checkout-wrapper
+  .select2-container--default
+  .select2-selection--single {
+  background-color: #f5f5f5 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 15px !important;
+  width: 100% !important;
+  height: auto !important;
+  color: #333;
+}
+
+/* Кнопка "Оформити замовлення" */
+#place_order,
+.custom-checkout-wrapper button[type="submit"] {
+  background-color: #4a041a !important;
+  color: #fff !important;
+  width: 100%;
+  padding: 20px !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#place_order:hover {
+  background-color: #360313 !important;
+}
+
+/* Прибираємо стандартні таблиці перегляду замовлення, якщо потрібен тільки вибір оплати */
+.woocommerce-checkout-review-order-table {
+  display: none; /* Якщо на макеті не повинно бути списку товарів знову */
+}
+
+/* Текст оферти */
+.woocommerce-privacy-policy-text {
+  font-size: 12px;
+  color: #888;
+  margin-top: 20px;
+}
+
+/* Заголовок секції з лінією знизу */
+.custom-checkout-wrapper .section-title {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin: 40px 0 25px 0;
+  padding-bottom: 15px; /* Відступ до лінії */
+  border-bottom: 1px solid #f0f0f0; /* Лінія після тексту */
+  border-top: none; /* Прибираємо попередню лінію зверху */
+  display: block;
+  width: 100%;
+}
+
+/* Стилізація інпутів */
+.custom-checkout-wrapper .form-row {
+  margin-bottom: 10px !important;
+}
+
+.custom-checkout-wrapper input.input-text,
+.custom-checkout-wrapper textarea {
+  background-color: #f5f5f5 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 18px 20px !important;
+  font-size: 14px !important;
+  color: #333 !important;
+}
+
+/* Колір плейсхолдера */
+.custom-checkout-wrapper input::placeholder,
+.custom-checkout-wrapper textarea::placeholder {
+  color: #a0a0a0 !important;
+}
+
+/* Приховуємо labels (написи над полями), щоб залишити тільки плейсхолдери */
+.custom-checkout-wrapper .form-row label {
+  display: none !important;
+}
+
+/* Вирівнювання контейнера */
+.custom-checkout-wrapper .section-fields {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Кожен інпут займає окремий рядок */
+.custom-checkout-wrapper .form-row-wide {
+    width: 100% !important;
+    clear: both;
+    display: block !important;
+}
+
+/* Стилізація випадаючих списків (select) та поля Місто */
+.custom-select-style, 
+.custom-city-select {
+    appearance: none !important; /* Прибираємо стандартну стрілку браузера */
+    -webkit-appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23888%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M6%209l6%206%206-6%22%2F%3E%3C%2Fsvg%3E') !important;
+    background-repeat: no-repeat !important;
+    background-position: right 20px center !important;
+    background-size: 18px !important;
+    cursor: pointer;
+}
+
+/* Специфічні стилі для поля "Місто", якщо воно має бути кнопкою */
+.custom-city-select {
+    background-color: #f5f5f5 !important;
+}
+
+/* Коментар до замовлення (Textarea) */
+.custom-checkout-wrapper textarea {
+    height: 120px !important;
+    resize: none;
+}
+
+/* Прибираємо стандартні стилі WooCommerce для полів */
+.woocommerce-checkout .form-row {
+    padding: 0 !important;
+}
+
+/* Приховуємо стандартний купон, якщо PHP-код його не "вбив" */
+.woocommerce-form-coupon-toggle, .checkout_coupon { display: none !important; }
+
+/* Фейковий селект для міста */
+.fake-select {
+    background-color: #f5f5f5;
+    padding: 18px 20px;
+    color: #333;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Текст оферти та кнопка */
+.final-order-button-wrapper {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.policy-text {
+    font-size: 13px;
+    color: #a0a0a0;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.policy-text a {
+    color: #a0a0a0;
+    text-decoration: underline;
+}
+
+#place_order {
+    background-color: #4a041a !important; /* Ваш бордовий */
+    color: #fff !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+    padding: 20px !important;
+    font-size: 16px !important;
+    font-weight: bold;
+    text-transform: none;
+}
+
+/* Видаляємо стандартний блок оферти та політики WooCommerce */
+.woocommerce-checkout-payment .place-order .woocommerce-terms-and-conditions-wrapper,
+.woocommerce-checkout-payment .place-order button#place_order,
+.woocommerce-privacy-policy-text {
+    display: none !important;
+}
+
+/* Прибираємо напис про відсутність методів оплати (залишаємо порожнє місце) */
+.woocommerce-checkout-payment .woocommerce-notice {
+    display: none !important;
+}
+
+/* Очищення фону та рамок блоку оплати */
+#payment.woocommerce-checkout-payment {
+    background: none !important;
+    border: none !important;
+}
+
+#payment ul.payment_methods {
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Стилізуємо всі селекти плагіна Нової Пошти */
+.custom-checkout-wrapper select,
+.custom-checkout-wrapper .select2-container--default .select2-selection--single {
+    background-color: #f5f5f5 !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 15px 20px !important;
+    height: 55px !important;
+    width: 100% !important;
+    appearance: none !important;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23888%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M6%209l6%206%206-6%22%2F%3E%3C%2Fsvg%3E') !important;
+    background-repeat: no-repeat !important;
+    background-position: right 20px center !important;
+    background-size: 18px !important;
+}
+
+/* Виправляємо відображення тексту в Select2 (якщо плагін його використовує) */
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 25px !important;
+    color: #333 !important;
+    text-align: left;
+}
+
+/* Стилізація селекта, який створює плагін Нової Пошти */
+.select2-container--default .select2-selection--single {
+    border: 1px solid #ccc; /* Ваші кольори */
+    height: 45px; /* Ваша висота */
+    border-radius: 4px;
+}

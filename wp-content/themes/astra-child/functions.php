@@ -180,7 +180,7 @@ function custom_product_slider_shortcode() {
             <div class="swiper-wrapper">
                 <?php while ($products->have_posts()) : $products->the_post(); global $product; ?>
                     <div class="swiper-slide">
-                        <?php wc_get_template_part('content', 'product'); ?>
+                        <?php wc_get_template_part('woocommerce/content-product', 'slider'); ?>
                     </div>
                 <?php endwhile; wp_reset_postdata(); ?>
             </div>
@@ -292,5 +292,143 @@ add_shortcode('custom_product_slider', 'custom_product_slider_shortcode');
 function is_product_new($product_id) {
     $post_date = get_the_date('U', $product_id);
     return ( time() - $post_date ) < (200 * DAY_IN_SECONDS);
+}
+
+
+// Кастомні поля для грамів/мілілітрів
+
+// 1. Додаємо поля в картку товару в адмінці
+add_action( 'woocommerce_product_options_general_product_data', 'add_custom_volume_fields' );
+function add_custom_volume_fields() {
+    echo '<div class="options_group">';
+
+    // Поле для цифри
+    woocommerce_wp_text_input( array(
+        'id'          => '_custom_volume_value',
+        'label'       => __( 'Об\'єм/Вага', 'woocommerce' ),
+        'placeholder' => 'Наприклад: 250',
+        'desc_tip'    => 'true',
+        'description' => __( 'Введіть числове значення', 'woocommerce' ),
+        'type'        => 'number',
+    ) );
+
+    // Випадаючий список (г чи мл)
+    woocommerce_wp_select( array(
+        'id'      => '_custom_volume_unit',
+        'label'   => __( 'Одиниця виміру', 'woocommerce' ),
+        'options' => array(
+            'ml' => __( 'мл (ml)', 'woocommerce' ),
+            'g'  => __( 'г (g)', 'woocommerce' ),
+        ),
+    ) );
+
+    echo '</div>';
+}
+
+// 2. Зберігаємо дані при збереженні товару
+add_action( 'woocommerce_process_product_meta', 'save_custom_volume_fields' );
+function save_custom_volume_fields( $post_id ) {
+    $volume_value = $_POST['_custom_volume_value'];
+    $volume_unit = $_POST['_custom_volume_unit'];
+    
+    update_post_meta( $post_id, '_custom_volume_value', esc_attr( $volume_value ) );
+    update_post_meta( $post_id, '_custom_volume_unit', esc_attr( $volume_unit ) );
+}
+
+
+//Кастомні хлібні крихти
+
+add_filter( 'woocommerce_get_breadcrumb', 'custom_woocommerce_breadcrumbs', 20, 2 );
+function custom_woocommerce_breadcrumbs( $crumbs, $breadcrumb ) {
+    // Створюємо новий порожній масив для наших крихт
+    $new_crumbs = array();
+
+    // 1. Додаємо "Каталог" як перший елемент
+    // shop_page_id автоматично підтягне посилання на вашу сторінку магазину
+    $shop_id = wc_get_page_id( 'catalog' );
+    $new_crumbs[] = array( 'Каталог', get_permalink( $shop_id ) );
+
+    // 2. Якщо ми в категорії, додаємо лише поточну підкатегорію
+    if ( is_product_category() ) {
+        $current_term = $GLOBALS['wp_query']->get_queried_object();
+        $new_crumbs[] = array( $current_term->name, '' );
+    } 
+    // 3. Якщо ми в самому товарі, додаємо його назву
+    elseif ( is_product() ) {
+        $new_crumbs[] = array( get_the_title(), '' );
+    }
+
+    return $new_crumbs;
+}
+
+add_filter( 'http_request_args', 'custom_http_request_args', 100, 1 );
+function custom_http_request_args( $r ) {
+    $r['timeout'] = 300; // Збільшуємо час очікування до 60 секунд
+    return $r;
+}
+
+add_action('wp_enqueue_scripts', function() {
+    if ( is_checkout() ) {
+        wp_localize_script('jquery', 'wcus_params', [
+            'ajax_nonce' => wp_create_nonce('wc_ukr_shipping'), 
+            'ajax_url'   => admin_url('admin-ajax.php')
+        ]);
+    }
+}, 30);
+
+/**
+ * Пошук міст у базі даних Нової Пошти
+ */
+add_action('wp_ajax_custom_search_cities', 'custom_search_cities_handler');
+add_action('wp_ajax_nopriv_custom_search_cities', 'custom_search_cities_handler');
+
+function custom_search_cities_handler() {
+    global $wpdb;
+    
+    $search = isset($_POST['search']) ? sanitize_text_field($_POST['search']) : '';
+    if (mb_strlen($search) < 3) wp_send_json([]);
+
+    $table_name = $wpdb->prefix . 'wc_ukr_shipping_np_cities';
+
+    // Шукаємо по полю description (назва міста)
+    $results = $wpdb->get_results($wpdb->prepare(
+        "SELECT ref as id, description as text 
+         FROM $table_name 
+         WHERE description LIKE %s 
+         LIMIT 15",
+        '%' . $wpdb->esc_like($search) . '%'
+    ));
+
+    wp_send_json($results);
+}
+
+/**
+ * Пошук відділень для конкретного міста
+ */
+add_action('wp_ajax_custom_search_warehouses', 'custom_search_warehouses_handler');
+add_action('wp_ajax_nopriv_custom_search_warehouses', 'custom_search_warehouses_handler');
+
+function custom_search_warehouses_handler() {
+    global $wpdb;
+    
+    $city_ref = isset($_POST['city_ref']) ? sanitize_text_field($_POST['city_ref']) : '';
+    $search = isset($_POST['search']) ? sanitize_text_field($_POST['search']) : '';
+    
+    if (empty($city_ref)) wp_send_json([]);
+
+    $table_name = $wpdb->prefix . 'wc_ukr_shipping_np_warehouses';
+
+    // Формуємо запит: обов'язково фільтруємо по city_ref
+    $query = "SELECT ref as id, description as text FROM $table_name WHERE city_ref = %s";
+    $params = [$city_ref];
+
+    if (!empty($search)) {
+        $query .= " AND description LIKE %s";
+        $params[] = '%' . $wpdb->esc_like($search) . '%';
+    }
+
+    $results = $wpdb->get_results($wpdb->prepare($query, $params));
+
+    wp_send_json($results);
 }
 

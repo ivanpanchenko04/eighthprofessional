@@ -16,11 +16,12 @@ $img_base_url = site_url( '/img/' );
 echo '<div class="custom-star-rating">';
 
 for ( $i = 0; $i < $full; $i++ ) {
-	echo '<img src="' . $img_base_url . 'star-empty.svg" alt="star" class="star">';
+    echo '<img src="' . $img_base_url . 'star-full.svg" alt="star" class="star">';
 }
 if ( $half ) {
-	echo '<img src="' . $img_base_url . 'star-empty.svg" alt="half-star" class="star">';
+    echo '<img src="' . $img_base_url . 'star-half.svg" alt="half-star" class="star">';
 }
+// Порожні зірки залишаються як були
 for ( $i = 0; $i < $empty; $i++ ) {
 	echo '<img src="' . $img_base_url . 'star-empty.svg" alt="star" class="star">';
 }
